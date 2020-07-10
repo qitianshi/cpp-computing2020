@@ -53,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3115A14C24B875EA0017D543 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		3115A14D24B876310017D543 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		311A2AE024B84406000FFBFE /* testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testbed; sourceTree = BUILT_PRODUCTS_DIR; };
 		311A2AE224B84406000FFBFE /* testbed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testbed.cpp; sourceTree = "<group>"; };
 		3185D95024B844A3007DF821 /* Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				3185D96A24B8451E007DF821 /* SumOfPairs.cpp */,
+				3115A14C24B875EA0017D543 /* data.txt */,
+				3115A14D24B876310017D543 /* Description.md */,
 			);
 			path = SumOfPairs;
 			sourceTree = "<group>";

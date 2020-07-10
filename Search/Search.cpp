@@ -13,6 +13,7 @@
 #include <stdlib.h>     // Randomizer
 #include <time.h>       // Time, acts as seed for randomizer.
 #include <algorithm>    // Sort function
+#include <chrono>       // High resolution chronograph to time code.
 using namespace std;
 
 /// Prints the elements and original indexes in a vector.
@@ -33,7 +34,7 @@ int sequentialSearch(vector <pair <int, int>> searchElements, int target) {
     while (searchElements[i].first != target && i <= searchElements.size()) { i ++; }
     
     if (i > searchElements.size()) { return -1; }
-    return i;
+    else { return i; }
     
 }
 
