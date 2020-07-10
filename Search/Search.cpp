@@ -14,14 +14,7 @@ using namespace std;
 
 int main() {
     
-    vector <pair <int, int>> searchVector;
-    int vectorSize, searchMethod;
-    
-    cout << "Number of elements: ";
-    cin >> vectorSize;
-    cout << "Search method: ";
-    cin >> searchMethod;
-    
+    cout << "Hello, world!\n";
     
     return 0;
     

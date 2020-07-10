@@ -17,7 +17,7 @@ using namespace std;
 /// @param array The integer array to be printed.
 /// @param arraySize The size of the array.
 void displayArray(int array[], int arraySize) {
-    for (int i = 0; i < arraySize; i ++) {
+    for (int i = 0; i < arraySize; ++ i) {
         cout << array[i] << ' ';
     }
 }
@@ -28,7 +28,7 @@ void displayArray(int array[], int arraySize) {
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void insertionSort(int sortArray[], int arraySize) {
-    for (int i = 1; i < arraySize; i ++) {
+    for (int i = 1; i < arraySize; ++ i) {
         
         int value = sortArray[i];       // Temporarily stores the original value.
         int key = i - 1;
@@ -49,11 +49,11 @@ void insertionSort(int sortArray[], int arraySize) {
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void selectionSort(int sortArray[], int arraySize) {
-    for (int i = 0; i < arraySize - 1; i ++) {
+    for (int i = 0; i < arraySize - 1; ++ i) {
         
         int smallestKey = i;        // Smallest key defaults to i so that the smallest value in the unsorted subarray can be found.
         
-        for (int j = i + 1; j < arraySize; j ++) {      // Finds the smallest value in the unsorted subarray.
+        for (int j = i + 1; j < arraySize; ++ j) {      // Finds the smallest value in the unsorted subarray.
             if (sortArray[j] < sortArray[smallestKey]) { smallestKey = j; }
         }
         
@@ -68,8 +68,8 @@ void selectionSort(int sortArray[], int arraySize) {
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void bubbleSort(int sortArray[], int arraySize) {
-    for (int i = 0; i < arraySize - 1; i ++) {
-        for (int j = 0; j < arraySize - i - 1; j ++) {
+    for (int i = 0; i < arraySize - 1; ++ i) {
+        for (int j = 0; j < arraySize - i - 1; ++ j) {
             if (sortArray[j] > sortArray[j + 1]) { swap(sortArray[j], sortArray[j + 1]); }      // Compares each element with its adjacent one.
         }
     }
@@ -88,8 +88,8 @@ void merge(int sortArray[], int leftIndex, int middleIndex, int rightIndex) {
     // Creates temporary arrays to store elements from the main list.
     int firstSubarray[firstSubarraySize];
     int secondSubarray[secondSubarraySize];
-    for (int i = 0; i < firstSubarraySize; i ++) { firstSubarray[i] = sortArray[leftIndex + i]; }
-    for (int i = 0; i < secondSubarraySize; i ++) { secondSubarray[i] = sortArray[middleIndex + 1 + i]; }
+    for (int i = 0; i < firstSubarraySize; ++ i) { firstSubarray[i] = sortArray[leftIndex + i]; }
+    for (int i = 0; i < secondSubarraySize; ++ i) { secondSubarray[i] = sortArray[middleIndex + 1 + i]; }
     
     int firstSubarrayIndex = 0;         // Initial index of first subarray
     int secondSubarrayIndex = 0;        // Initial index of second subarray
@@ -156,7 +156,7 @@ void quickSort(int sortArray[], int leftIndex, int rightIndex) {
         
         int smallerElementIndex = leftIndex - 1;    // Initializes with a default value.
         
-        for (int j = leftIndex; j < rightIndex; j ++) {
+        for (int j = leftIndex; j < rightIndex; ++ j) {
             if (sortArray[j] < sortArray[rightIndex]) {     // The last element in the subarray is used as the pivot.
                 smallerElementIndex ++;
                 swap(sortArray[smallerElementIndex], sortArray[j]);
@@ -182,21 +182,21 @@ void countingSort(int sortArray[], int arraySize) {
     
     // Finds the maximum value in the array.
     int maxValue = INT_MIN;
-    for (int i = 0; i < arraySize; i ++) {
+    for (int i = 0; i < arraySize; ++ i) {
         if (sortArray[i] > maxValue) { maxValue = sortArray[i]; }
     }
     
     // Creates a temporary array to store occurences of each element.
     int output[maxValue + 1];
-    for (int i = 0; i < maxValue + 1; i ++) { output[i] = 0; }      // Variable-sized arrays cannot be directly initialized.
+    for (int i = 0; i < maxValue + 1; ++ i) { output[i] = 0; }      // Variable-sized arrays cannot be directly initialized.
 
     // Records the number of occurences of each element.
-    for (int i = 0; i < arraySize; i ++) { output[sortArray[i]] ++; }
+    for (int i = 0; i < arraySize; ++ i) { output[sortArray[i]] ++; }
 
     // Modifies the original array.
     int sortArrayIndex = 0;
-    for (int i = 0; i < maxValue + 1; i ++) {
-        for (int j = 0; j < output[i]; j ++) {
+    for (int i = 0; i < maxValue + 1; ++ i) {
+        for (int j = 0; j < output[i]; ++ j) {
             sortArray[sortArrayIndex] = i;
             sortArrayIndex ++;
         }
@@ -235,9 +235,9 @@ void heapify(int sortArray[], int upperIndex, int lowerIndex) {
 void heapSort(int sortArray[], int arraySize) {
     
     // Builds a max-heap
-    for (int i = arraySize / 2 - 1; i >= 0; i--) { heapify(sortArray, arraySize, i); }
+    for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, arraySize, i); }
 
-    for (int i = arraySize - 1; i >= 0; i--) {
+    for (int i = arraySize - 1; i >= 0; -- i) {
       swap(sortArray[0], sortArray[i]);
       heapify(sortArray, i, 0);     // Heapifies the root element after each iteration to move largest element back to the root.
     }
@@ -263,12 +263,12 @@ int main() {
         
         // Generates a random sequence of numbers for the array.
         srand(static_cast<unsigned int>(time(NULL)));       // Casts time(), type long, to unsigned int.
-        for (int i = 0; i < arraySize; i ++) { sortArray[i] = rand() % 101; }
+        for (int i = 0; i < arraySize; ++ i) { sortArray[i] = rand() % 101; }
         
         // Prints the original array.
         if (arraySize <= 100) {
             cout << "\nUnsorted array\n";
-            for (int i = 0; i < arraySize; i ++) { cout << sortArray[i] << ' '; }
+            for (int i = 0; i < arraySize; ++ i) { cout << sortArray[i] << ' '; }
             cout << '\n';
         }
         
