@@ -8,8 +8,7 @@
 
 
 #include <iostream>
-#include <vector>
-#include <utility>      // pair (data structure)
+#include <map>
 #include <fstream>      // fstream (read from files)
 #include <algorithm>    // find (find elements in arrays), sort
 using namespace std;
@@ -19,11 +18,11 @@ using namespace std;
 /// @param arraySize The size of the array.
 /// @param targetValue The target value.
 /// @return A vector of pairs containing unique pairs of integers.
-vector <pair <int, int>> searchForPairs(int sequence[], int arraySize, int targetValue) {
+map<int, int> searchForPairs(int sequence[], int arraySize, int targetValue) {
     
     sort(sequence, sequence + arraySize);           // Sorts the array.
     
-    vector <pair <int, int>> discoveredPairs;       // Creates a vector to store results.
+    map<int, int> discoveredPairs;       // Creates a vector to store results.
     int i = -1,
         previousValue = INT_MIN,
         searchTarget;
@@ -36,15 +35,7 @@ vector <pair <int, int>> searchForPairs(int sequence[], int arraySize, int targe
         searchTarget = targetValue - sequence[i];       // Calculates the value that needs to be found.
         
         // Adds the pair if it exists in the array.
-        if (find(sequence, sequence + arraySize, searchTarget) != sequence + arraySize) {
-            
-            pair <int, int> newEntry;
-            newEntry.first = sequence[i];
-            newEntry.second = searchTarget;
-            
-            discoveredPairs.push_back(newEntry);
-            
-        }
+        if (find(sequence, sequence + arraySize, searchTarget) != sequence + arraySize) { discoveredPairs.insert(pair<int, int> (sequence[i], searchTarget)); }
         
         previousValue = sequence[i];
         
@@ -67,11 +58,11 @@ int main() {
     int targetValue;
     fileIn >> targetValue;
     
-    vector <pair <int, int>> results;       // Creates a vector of pairs to store results.
+    map<int, int> results;       // Creates a vector of pairs to store results.
     results = searchForPairs(sequence, arraySize, targetValue);
     if (results.empty()) { cout << "None\n"; }
     else {
-        for (int i = 0; i < results.size(); ++ i) { cout << results[i].first << ' ' << results[i].second << '\n'; }
+        for (map<int, int>::iterator itr = results.begin(); itr != results.end(); ++ itr) { cout << itr -> first << ' ' << itr -> second << '\n'; }
     }
     
     return 0;

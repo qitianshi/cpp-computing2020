@@ -18,7 +18,7 @@ using namespace std;
 
 /// Prints the elements and original indexes in a vector.
 /// @param vector The vector to be printed.
-void displayVector(vector <pair <int, int>> vector) {
+void displayVector(vector<pair<int, int>> vector) {
     for (int i = 0; i < vector.size(); ++ i) { cout << vector[i].second << ".\t" << vector[i].first << '\n'; }
 }
 
@@ -28,7 +28,7 @@ void displayVector(vector <pair <int, int>> vector) {
 /// @param searchElements The vector of elements in which to search.
 /// @param target The element to search for.
 /// @return The index of the search target in the original vector. Returns -1 if the target was not found.
-int sequentialSearch(vector <pair <int, int>> searchElements, int target) {
+int sequentialSearch(vector<pair<int, int>> searchElements, int target) {
     
     int i = 0;
     while (searchElements[i].first != target && i <= searchElements.size()) { i ++; }
@@ -46,7 +46,7 @@ int sequentialSearch(vector <pair <int, int>> searchElements, int target) {
 /// @param leftIndex The left index of the subarray.
 /// @param rightIndex The right index of the subarray.
 /// @return The index of the search target in the original vector. Returns -1 if the target was not found.
-int binarySearch(vector <pair <int, int>> searchElements, int target, int leftIndex, int rightIndex) {
+int binarySearch(vector<pair<int, int>> searchElements, int target, int leftIndex, int rightIndex) {
     
     if (rightIndex >= leftIndex) {
         
@@ -83,16 +83,8 @@ int main() {
         srand(static_cast<unsigned int>(time(NULL)));
         for (int i = 0; i < vectorSize; ++ i) { swap(randomizedNumbers[rand() % vectorSize], randomizedNumbers[rand() % vectorSize]); }     // Randomizes the order of elements in the array.
         
-        vector <pair <int, int>> searchElements;
-        for (int i = 0; i < vectorSize; ++ i) {         // Pushes the randomized array of numbers into the vector along with their original indexes.
-            
-            pair <int, int> newEntry;
-            newEntry.first = randomizedNumbers[i];      // Value
-            newEntry.second = i;                        // Original index
-            
-            searchElements.push_back(newEntry);
-            
-        }
+        vector<pair<int, int>> searchElements;        // Map is not used because this program is used to demonstrate binary search.
+        for (int i = 0; i < vectorSize; ++ i) { searchElements.push_back(pair<int, int> (randomizedNumbers[i], i)); }       // Pushes the randomized array of numbers into the vector along with their original indexes.
         
         if (vectorSize <= 100) {
             cout << "\nOriginal list\n";
