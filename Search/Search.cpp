@@ -9,11 +9,11 @@
 
 #include <iostream>
 #include <vector>
-#include <utility>      // Pair data structure
-#include <stdlib.h>     // Randomizer
-#include <time.h>       // Time, acts as seed for randomizer.
-#include <algorithm>    // Sort function
-#include <chrono>       // High resolution chronograph to time code.
+#include <utility>      // pair (data structure)
+#include <stdlib.h>     // rand (randomizer), srand
+#include <time.h>       // time (seed for randomizer)
+#include <algorithm>    // sort
+#include <chrono>       // steady_clock (high resolution chronograph)
 using namespace std;
 
 /// Prints the elements and original indexes in a vector.

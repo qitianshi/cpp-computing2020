@@ -8,9 +8,10 @@
 
 
 #include <iostream>
-#include <stdlib.h>     // Randomizer
-#include <time.h>       // Time, acts as seed for randomizer.
-#include <chrono>       // High resolution chronograph to time code.
+#include <stdlib.h>     // rand (randomizer), srand
+#include <time.h>       // time (seed for randomizer)
+#include <chrono>       // steady_clock (high resolution chronograph)
+#include <algorithm>    // sort
 using namespace std;
 
 /// Prints the elements of an array, separated by spaces.
@@ -321,6 +322,12 @@ int main() {
             case 7: {
                 heapSort(sortArray, arraySize);
                 sortType = "Heap sort";
+                break;
+            }
+                
+            case 8: {
+                sort(sortArray, sortArray + arraySize);
+                sortType = "std::sort()";
                 break;
             }
                 

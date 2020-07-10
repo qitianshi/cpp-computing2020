@@ -9,32 +9,10 @@
 
 #include <iostream>
 #include <vector>
-#include <utility>      // Pair data structure
-#include <fstream>      // Reading and writing to files.
-#include <chrono>       // High resolution chronograph to time code.
+#include <utility>      // pair (data structure)
+#include <fstream>      // fstream (read from files)
+#include <algorithm>    // find (find elements in arrays), sort
 using namespace std;
-
-/// Determines if the given target is present using binary search.
-/// @param searchElements The array of elements in which to search.
-/// @param target The element to search for.
-/// @param leftIndex The left index of the subarray.
-/// @param rightIndex The right index of the subarray.
-/// @return Whether the targest exists in the given array.
-bool binaryFind(int searchElements[], int target, int leftIndex, int rightIndex) {
-    
-    if (rightIndex >= leftIndex) {
-        
-        int middleIndex = leftIndex + (rightIndex - leftIndex) / 2;
-        
-        if (searchElements[middleIndex] == target) { return true; }     // Target has been found.
-        else if (searchElements[middleIndex] > target) { return binaryFind(searchElements, target, leftIndex, middleIndex - 1); }       // Target is in the left subarray.
-        else { return binaryFind(searchElements, target, middleIndex + 1, rightIndex); }       // Target is in the right subarray.
-        
-    }
-    
-    return false;      // This is only run when the list has been fully broken down but the target has not been found.
-    
-}
 
 /// Finds unique pairs of integers that sum to a given number.
 /// @param sequence The array of numbers in which to search for pairs.
@@ -58,7 +36,7 @@ vector <pair <int, int>> searchForPairs(int sequence[], int arraySize, int targe
         searchTarget = targetValue - sequence[i];       // Calculates the value that needs to be found.
         
         // Adds the pair if it exists in the array.
-        if (binaryFind(sequence, searchTarget, 0, arraySize - 1)) {
+        if (find(sequence, sequence + arraySize, searchTarget) != sequence + arraySize) {
             
             pair <int, int> newEntry;
             newEntry.first = sequence[i];
@@ -91,7 +69,10 @@ int main() {
     
     vector <pair <int, int>> results;       // Creates a vector of pairs to store results.
     results = searchForPairs(sequence, arraySize, targetValue);
-    for (int i = 0; i < results.size(); ++ i) { cout << results[i].first << ' ' << results[i].second << '\n'; }
+    if (results.empty()) { cout << "None\n"; }
+    else {
+        for (int i = 0; i < results.size(); ++ i) { cout << results[i].first << ' ' << results[i].second << '\n'; }
+    }
     
     return 0;
     
