@@ -13,14 +13,6 @@
 #include <chrono>       // High resolution chronograph to time code.
 using namespace std;
 
-/// Prints the elements of an integar array, separated by spaces.
-/// @param array The integer array to be printed.
-/// @param arraySize The size of the array.
-void displayArray(int array[], int arraySize) {
-    for (int i = 0; i < arraySize; ++ i) {
-        cout << array[i] << ' ';
-    }
-}
 
 /// Sorts the given array using insertion sort.
 ///
@@ -343,7 +335,7 @@ int main() {
             // Prints the sorted array.
             if (arraySize <= 100) {
                 cout << '\n';
-                displayArray(sortArray, arraySize);
+                for (int i = 0; i < arraySize; ++ i) { cout << sortArray[i] << ' '; }
             }
             
             cout << "\nCompleted in " << chrono::duration_cast<chrono::microseconds>(end - start).count() << " µs.\n";
