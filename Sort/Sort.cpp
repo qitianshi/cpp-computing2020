@@ -13,6 +13,12 @@
 #include <chrono>       // High resolution chronograph to time code.
 using namespace std;
 
+/// Prints the elements of an array, separated by spaces.
+/// @param array The array to be printed.
+/// @param arraySize The size of the array.
+void displayArray(int array[], int arraySize) {
+    for (int i = 0; i < arraySize; ++ i) { cout << array[i] << ' '; }
+}
 
 /// Sorts the given array using insertion sort.
 ///
@@ -260,7 +266,7 @@ int main() {
         // Prints the original array.
         if (arraySize <= 100) {
             cout << "\nUnsorted array\n";
-            for (int i = 0; i < arraySize; ++ i) { cout << sortArray[i] << ' '; }
+            displayArray(sortArray, arraySize);
             cout << '\n';
         }
         
@@ -330,12 +336,12 @@ int main() {
         // Checks that the selected sort method is valid.
         if (sortType != "") {
         
-            cout << "\n" << sortType;
+            cout << '\n' << sortType;
             
             // Prints the sorted array.
             if (arraySize <= 100) {
                 cout << '\n';
-                for (int i = 0; i < arraySize; ++ i) { cout << sortArray[i] << ' '; }
+                displayArray(sortArray, arraySize);
             }
             
             cout << "\nCompleted in " << chrono::duration_cast<chrono::microseconds>(end - start).count() << " µs.\n";
