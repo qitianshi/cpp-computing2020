@@ -98,7 +98,9 @@
 		311A2AC924B843EF000FFBFE = {
 			isa = PBXGroup;
 			children = (
-				3185D97124B84572007DF821 /* C++ */,
+				311A2AE224B84406000FFBFE /* testbed.cpp */,
+				3185D95124B844A3007DF821 /* Sort */,
+				3185D95E24B844F9007DF821 /* Search */,
 				311A2AD324B843EF000FFBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,16 +139,6 @@
 				3185D96A24B8451E007DF821 /* SumOfPairs.cpp */,
 			);
 			path = SumOfPairs;
-			sourceTree = "<group>";
-		};
-		3185D97124B84572007DF821 /* C++ */ = {
-			isa = PBXGroup;
-			children = (
-				311A2AE224B84406000FFBFE /* testbed.cpp */,
-				3185D95124B844A3007DF821 /* Sort */,
-				3185D95E24B844F9007DF821 /* Search */,
-			);
-			path = "C++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
