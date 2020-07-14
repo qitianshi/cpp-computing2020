@@ -52,7 +52,7 @@ int main() {
     int arraySize;
     fileIn >> arraySize;
     
-    int sequence[arraySize];
+    int *sequence = new int[arraySize];
     for (int i = 0; i < arraySize; ++ i) { fileIn >> sequence[i]; }
     
     int targetValue;
