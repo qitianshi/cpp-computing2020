@@ -48,14 +48,14 @@ int main() {
         vector<int>::iterator lower, upper;     // Points to the lower and upper bounds of the subsequence.
     
         lower = lower_bound(sequence[i].begin(), sequence[i].end(), lowerValue);        // Finds the first element that is greater than or equal to the given value.
-        upper = upper_bound(sequence[i].begin(), sequence[i].end(), upperValue);        // Finds the first element that is greatet than the value.
+        upper = upper_bound(sequence[i].begin(), sequence[i].end(), upperValue);        // Finds the first element that is greater than the given value.
         
         for(vector<int>::iterator itr = lower; itr != upper; ++ itr) { inputVector.push_back(*itr); }       // Extracts the elements from the sequence.
         
         if (inputVector.size() > longestSubsequence) {      // Resets the result output if the new sequence is shorter.
             results.clear();
             results.push_back(inputVector);
-            longestSubsequence = static_cast<int>(inputVector.size());
+            longestSubsequence = static_cast<int>(inputVector.size());      // Casts .size() to type int.
         } else if (inputVector.size() == longestSubsequence) { results.push_back(inputVector); }
         
     }
