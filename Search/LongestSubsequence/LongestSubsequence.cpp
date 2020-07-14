@@ -1,4 +1,4 @@
-// main.cpp
+// LongestSubsequence.cpp
 // Created on 14/7/20
 // Running on macOS 10.15
 
@@ -52,7 +52,7 @@ int main() {
         
         for(vector<int>::iterator itr = lower; itr != upper; ++ itr) { inputVector.push_back(*itr); }       // Extracts the elements from the sequence.
         
-        if (inputVector.size() > longestSubsequence) {      // Resets the result if the current sequences are shorter.
+        if (inputVector.size() > longestSubsequence) {      // Resets the result output if the new sequence is shorter.
             results.clear();
             results.push_back(inputVector);
             longestSubsequence = static_cast<int>(inputVector.size());

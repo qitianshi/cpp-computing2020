@@ -4,10 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NonDecreasingSequence.xcscheme_^#shared#^_</key>
+		<key>LongestSubsequence.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Search.xcscheme_^#shared#^_</key>
 		<dict>
@@ -38,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>3156D2E324BD98590090066F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3156D2F024BDC9720090066F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
