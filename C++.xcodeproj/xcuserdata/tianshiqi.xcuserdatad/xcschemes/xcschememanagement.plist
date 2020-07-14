@@ -12,7 +12,7 @@
 		<key>Sort.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>SumOfPairs.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,11 +22,16 @@
 		<key>testbed.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>311A2ADF24B84406000FFBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3185D95C24B844F9007DF821</key>
 		<dict>
 			<key>primary</key>

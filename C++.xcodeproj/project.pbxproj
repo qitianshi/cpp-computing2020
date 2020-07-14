@@ -57,6 +57,7 @@
 		3115A14D24B876310017D543 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		311A2AE024B84406000FFBFE /* testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testbed; sourceTree = BUILT_PRODUCTS_DIR; };
 		311A2AE224B84406000FFBFE /* testbed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testbed.cpp; sourceTree = "<group>"; };
+		3156D2DF24BD92830090066F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		3185D95024B844A3007DF821 /* Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		3185D95724B844C0007DF821 /* Sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sort.cpp; sourceTree = "<group>"; };
 		3185D95D24B844F9007DF821 /* Search */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Search; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +101,7 @@
 		311A2AC924B843EF000FFBFE = {
 			isa = PBXGroup;
 			children = (
-				311A2AE224B84406000FFBFE /* testbed.cpp */,
+				3156D2DE24BD925B0090066F /* testbed */,
 				3185D95124B844A3007DF821 /* Sort */,
 				3185D95E24B844F9007DF821 /* Search */,
 				311A2AD324B843EF000FFBFE /* Products */,
@@ -116,6 +117,15 @@
 				3185D96824B8451E007DF821 /* SumOfPairs */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3156D2DE24BD925B0090066F /* testbed */ = {
+			isa = PBXGroup;
+			children = (
+				311A2AE224B84406000FFBFE /* testbed.cpp */,
+				3156D2DF24BD92830090066F /* data.txt */,
+			);
+			path = testbed;
 			sourceTree = "<group>";
 		};
 		3185D95124B844A3007DF821 /* Sort */ = {
