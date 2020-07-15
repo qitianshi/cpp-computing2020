@@ -10,7 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <algorithm> // lower_bound, upper_bound
+#include <algorithm>        // lower_bound, upper_bound
 using namespace std;
 
 int main() {

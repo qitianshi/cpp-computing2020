@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LongestSubsequence.xcscheme_^#shared#^_</key>
+		<key>LineSegments.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>LongestSubsequence.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Search.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,7 +22,7 @@
 		<key>Sort.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>SumOfPairs.xcscheme_^#shared#^_</key>
 		<dict>

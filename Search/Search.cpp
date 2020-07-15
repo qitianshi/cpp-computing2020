@@ -1,4 +1,4 @@
-// Searching.cpp
+// Search.cpp
 // Created on 8/7/20
 // Running on macOS 10.15
 
