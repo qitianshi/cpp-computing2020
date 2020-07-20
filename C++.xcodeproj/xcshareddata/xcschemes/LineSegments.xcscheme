@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3185D95C24B844F9007DF821"
-               BuildableName = "Search"
-               BlueprintName = "Search"
+               BlueprintIdentifier = "311922F624BEC6FE009FF0F0"
+               BuildableName = "LineSegments"
+               BlueprintName = "LineSegments"
                ReferencedContainer = "container:C++.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,7 +35,8 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "/Users/tianshiqi/Documents/Hwa Chong Institution/Computing/C++/Greedy/LineSegments"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -44,9 +45,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3185D95C24B844F9007DF821"
-            BuildableName = "Search"
-            BlueprintName = "Search"
+            BlueprintIdentifier = "311922F624BEC6FE009FF0F0"
+            BuildableName = "LineSegments"
+            BlueprintName = "LineSegments"
             ReferencedContainer = "container:C++.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +62,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3185D95C24B844F9007DF821"
-            BuildableName = "Search"
-            BlueprintName = "Search"
+            BlueprintIdentifier = "311922F624BEC6FE009FF0F0"
+            BuildableName = "LineSegments"
+            BlueprintName = "LineSegments"
             ReferencedContainer = "container:C++.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
