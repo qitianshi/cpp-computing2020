@@ -73,7 +73,7 @@ int main() {
     sort(lineSegments.begin(), lineSegments.end(), compareLines);
     
     // Removes extraneous segments.
-    for (vector<HorizontalLineSegment>::iterator itr = lineSegments.begin(); itr != (lineSegments.end() - 1); ++ itr) {
+    for (vector<HorizontalLineSegment>::iterator itr = lineSegments.begin(); itr < (lineSegments.end() - 1); ++ itr) {
         
         // Removes segments if their length is zero or they exist completely outside the given range.
         if ( ((*itr).length == 0) || ( (*itr).endCoordinate < 0 || (*itr).startCoordinate > targetRange ) ) {
@@ -82,9 +82,8 @@ int main() {
         }
         
         // Removes segments if they are enveloped by other segments.
-        while ((*itr).envelops(*(itr + 1)) && itr != lineSegments.end() - 1) { lineSegments.erase(itr + 1); }
+        while ((*itr).envelops(*(itr + 1)) && itr < lineSegments.end() - 1) { lineSegments.erase(itr + 1); }
         
-        if (itr == lineSegments.end() - 1) { break; }       // LITERALLY no idea why this line is necessary but without it everything dies so here it is.
     }
     
     vector<HorizontalLineSegment> result;
@@ -109,7 +108,7 @@ int main() {
         result.erase(result.begin());       // Removes the first (temporary) element.
         
         cout << result.size() << '\n';
-        for (vector<HorizontalLineSegment>::iterator itr = result.end() - 1; itr >= result.begin(); -- itr) { cout << (*itr).startCoordinate << ' ' << (*itr).endCoordinate << '\n'; }      // Outputs the line segments in reverse order.
+        for (vector<HorizontalLineSegment>::iterator itr = result.end() - 1; itr >= result.begin(); -- itr) { cout << (*itr).startCoordinate << ' ' << (*itr).endCoordinate << '\n'; }      // Outputs line segments in order of their coordinates.
         
     }
     
