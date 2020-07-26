@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/tianshiqi/Documents/Hwa Chong Institution/Computing/C++/Search/SumOfPairs"
+      customWorkingDirectory = "/Users/tianshiqi/Documents/School/Computing/C++/Search/SumOfPairs"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
