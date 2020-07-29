@@ -3,7 +3,7 @@
 ## Description
 Given a sequence of `N` non negative integers `(N ≤ 10,000)` and another integer `M`, find all possible unique pairs of integers `X` and `Y` from the sequence such that `M = X + Y`. 
 
-*Note: For `M=5`; the pair `X=2`, `Y=3` is considered as the same as `X=3`, `Y=2`*
+For `M=5`; the pair `X=2`, `Y=3` is considered as the same as `X=3`, `Y=2`.
 
 ## Input (`data.txt`)
 The first line will be an integer `N`. 
