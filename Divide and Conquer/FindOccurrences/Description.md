@@ -3,6 +3,8 @@
 ## Description
 Find the indexes of the first and last occurrence of a given integer in a list of sorted integers.
 
+Solve this using Divide and Conquer.
+
 ## Input (`data.txt`)
 The first line will be the target integer.
 
@@ -19,7 +21,7 @@ Two lines, respectively the indexes of the first and last occurrences of the tar
 
 If the target integer does not exist in the list, output `-1`.
 
-### Output
+### Sample
 ```
 3
 7
