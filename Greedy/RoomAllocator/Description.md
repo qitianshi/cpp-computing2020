@@ -15,6 +15,8 @@ The third line will be `R` integers, the capacity of each room, from `1` to `R`.
 ## Output (console)
 `S` lines of integers, each with the room allocations for that school in ascending order.
 
+If there is no possible solution, output `0`.
+
 ## Samples
 ### Input 1
 ```
@@ -31,6 +33,8 @@ The third line will be `R` integers, the capacity of each room, from `1` to `R`.
 1 2 3 4 5
 ```
 
+---
+
 ### Input 2
 ```
 4 5
@@ -43,6 +47,8 @@ The third line will be `R` integers, the capacity of each room, from `1` to `R`.
 0
 ```
 
+---
+
 ### Input 3
 ```
 7 8
@@ -51,7 +57,7 @@ The third line will be `R` integers, the capacity of each room, from `1` to `R`.
 ```
 
 ### Output 3
-*Any of the following*
+*Any of the following:*
 
 ```
 1 2 8
