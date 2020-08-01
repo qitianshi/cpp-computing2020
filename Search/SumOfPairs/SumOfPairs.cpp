@@ -11,6 +11,7 @@
 #include <map>
 #include <fstream>      // fstream (read from files)
 #include <algorithm>    // find (find elements in arrays), sort
+#include <limits.h>     // INT_MIN
 using namespace std;
 
 /// Finds unique pairs of integers that sum to a given number.
@@ -47,16 +48,16 @@ map<int, int> searchForPairs(int sequence[], int arraySize, int targetValue) {
 
 int main() {
     
-    ifstream fileIn("data.txt");
+    ifstream fin("data.txt");
     
     int arraySize;
-    fileIn >> arraySize;
+    fin >> arraySize;
     
     int *sequence = new int[arraySize];
-    for (int i = 0; i < arraySize; ++ i) { fileIn >> sequence[i]; }
+    for (int i = 0; i < arraySize; ++ i) { fin >> sequence[i]; }
     
     int targetValue;
-    fileIn >> targetValue;
+    fin >> targetValue;
     
     map<int, int> results;       // Creates a vector of pairs to store results.
     results = searchForPairs(sequence, arraySize, targetValue);

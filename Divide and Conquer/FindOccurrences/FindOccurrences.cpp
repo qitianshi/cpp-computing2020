@@ -22,6 +22,7 @@ enum occurrence { first, last };        // Possible cases for the target occurre
 /// @param rightIndex The right index of the sublist.
 /// @param target The number to search for.
 /// @param targetOccurrence Specifies whether the first or last occurrence of the number should be searched for.
+/// @return The index of the first or last occurrence of the target. Returns `-1` if the target was not found.
 int findNumber(vector<int> searchList, int leftIndex, int rightIndex, int target, occurrence targetOccurrence) {
     
     if (rightIndex >= leftIndex) {
@@ -61,16 +62,16 @@ int findNumber(vector<int> searchList, int leftIndex, int rightIndex, int target
 
 int main() {
     
-    ifstream fileIn("data.txt");
+    ifstream fin("data.txt");
     
     int target;
-    fileIn >> target;
+    fin >> target;
     
     // Pushes the list into a vector.
     vector<int> searchList;
-    while (!fileIn.eof()) {
+    while (!fin.eof()) {
         int input;
-        fileIn >> input;
+        fin >> input;
         searchList.push_back(input);
     }
     searchList.pop_back();      // Removes the last extraneous element.

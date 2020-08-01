@@ -12,19 +12,20 @@ The first line will be an integer `N`.
 
 The last line will be an integer `M`.
 
-### Sample
+## Output (console)
+Unique pairs of the integers `X` and `Y`, one per line, in ascending order of `X`.
+
+If there is no such pair, output `None`.
+
+## Sample I/O
+### Input
 ```
 10
 4 1 4 2 3 5 6 8 0 1 
 8
 ```
 
-## Output (console)
-Unique pairs of the integers `X` and `Y`, one per line, in ascending order of `X`.
-
-If there is no such pair, output `None`.
-
-### Sample
+### Output
 ```
 0 8
 2 6

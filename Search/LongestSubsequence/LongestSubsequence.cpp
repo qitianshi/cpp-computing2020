@@ -15,11 +15,11 @@ using namespace std;
 
 int main() {
     
-    ifstream fileIn("data.txt");
+    ifstream fin("data.txt");
     
     int rows, columns;
-    fileIn >> rows;
-    fileIn >> columns;
+    fin >> rows;
+    fin >> columns;
     
     vector<vector<int>> sequence;           // Stores the sequence in a vector of vectors.
     for (int i = 0; i < rows; ++ i) {       // Pushes each row into the sequence.
@@ -28,7 +28,7 @@ int main() {
         
         for (int j = 0; j < columns; ++ j) {
             int input;
-            fileIn >> input;
+            fin >> input;
             inputVector.push_back(input);
         }
         
@@ -37,8 +37,8 @@ int main() {
     }
     
     int lowerValue, upperValue;
-    fileIn >> lowerValue;
-    fileIn >> upperValue;
+    fin >> lowerValue;
+    fin >> upperValue;
     
     vector<vector<int>> results;
     int longestSubsequence = 0;     // The length of the current longest subsequence.

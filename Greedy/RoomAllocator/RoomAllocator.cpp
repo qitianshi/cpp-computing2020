@@ -10,7 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <algorithm>
+#include <algorithm>        // sort
 using namespace std;
 
 /// A school, represented by its number and the number of students they send.

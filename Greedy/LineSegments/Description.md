@@ -12,7 +12,11 @@ The following lines will contain two integers each, `L` and `R`.
 
 The final line is `0 0`, representing the end of input.
 
-### Sample
+## Output (console)
+The minimum number of line segments to cover `OM`, followed by the coordinates of each line segment, one per line.
+
+## Sample I/O
+### Input
 ```
 10
 -2 5
@@ -28,10 +32,7 @@ The final line is `0 0`, representing the end of input.
 0 0
 ```
 
-## Output (console)
-The minimum number of line segments to cover `OM`, followed by the coordinates of each line segment, one per line.
-
-### Sample
+### Output
 ```
 4
 -1 6

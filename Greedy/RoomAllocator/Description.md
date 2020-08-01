@@ -17,7 +17,7 @@ The third line will be `R` integers, the capacity of each room, from `1` to `R`.
 
 If there is no possible solution, output `0`.
 
-## Samples
+## Sample I/O
 ### Input 1
 ```
 4 5

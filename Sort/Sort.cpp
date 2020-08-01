@@ -12,6 +12,7 @@
 #include <time.h>       // time (seed for randomizer)
 #include <chrono>       // steady_clock (high resolution chronograph)
 #include <algorithm>    // sort
+#include <limits.h>     // INT_MIN
 using namespace std;
 
 /// Prints the elements of an array, separated by spaces.

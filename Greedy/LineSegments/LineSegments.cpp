@@ -10,7 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <algorithm>
+#include <algorithm>        // sort
 using namespace std;
 
 /// A horizontal line segment, represented by the x-coordinates of its start and end points.
@@ -56,16 +56,16 @@ bool compareLines(HorizontalLineSegment first, HorizontalLineSegment second) {
 
 int main() {
     
-    ifstream fileIn("data.txt");
+    ifstream fin("data.txt");
     
     int targetRange;
-    fileIn >> targetRange;
+    fin >> targetRange;
     
     // Stores the line segments in a vector.
     vector<HorizontalLineSegment> lineSegments;
     int leftCoordinate, rightCoordinate;
     do {
-        fileIn >> leftCoordinate >> rightCoordinate;
+        fin >> leftCoordinate >> rightCoordinate;
         lineSegments.push_back({leftCoordinate, rightCoordinate});      // Pushes an instance of HorizontalLineSegment
     } while (leftCoordinate != 0 || rightCoordinate != 0);
     lineSegments.pop_back();        // Pops the last element in the vector which is (0, 0).

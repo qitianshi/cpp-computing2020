@@ -10,7 +10,13 @@ The next `N` lines will contain `M` non-decreasing integers each.
 
 The final line will be two integers `L` and `H` separated by a space.
 
-### Sample
+## Output (console)
+The longest continuous subsequence(s), in the order that they appear.
+
+If there is no such subsequence, output `No Solution`.
+
+## Sample I/O
+### Input
 ```
 6 5
 2 4 4 7 9
@@ -22,12 +28,7 @@ The final line will be two integers `L` and `H` separated by a space.
 4 7
 ```
 
-## Output (console)
-The longest continuous subsequence(s), in the order that they appear.
-
-If there is no such subsequence, output `No Solution`.
-
-### Sample
+### Output
 ```
 4 5 6 7
 4 5 5 6
