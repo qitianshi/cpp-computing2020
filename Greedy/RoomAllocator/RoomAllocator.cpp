@@ -99,7 +99,7 @@ int main() {
             return 0;
         }
         
-        sort((*itrSchool).rooms.begin(), (*itrSchool).rooms.end());     // Sorts the allocations list in by the rooms' numbers.
+        sort((*itrSchool).rooms.begin(), (*itrSchool).rooms.end());     // Sorts the allocations list by the rooms' numbers.
         
     }
     
