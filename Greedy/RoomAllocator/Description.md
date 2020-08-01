@@ -57,8 +57,6 @@ If there is no possible solution, output `0`.
 ```
 
 ### Output 3
-*Any of the following:*
-
 ```
 1 2 8
 1 2 3 7
@@ -98,3 +96,5 @@ If there is no possible solution, output `0`.
 5 7
 4 6
 ```
+
+*Or any other possible combination. This list is non-exhaustive.*
