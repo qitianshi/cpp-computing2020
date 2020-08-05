@@ -34,7 +34,7 @@ int findNumber(vector<int> searchList, int leftIndex, int rightIndex, int target
                     
                 case first: {
                     
-                    if (searchList[middleIndex - 1] != target) { return middleIndex; }                                  // The first occurrence has been found.
+                    if (searchList[middleIndex - 1] != target) { return middleIndex; }                                   // The first occurrence has been found.
                     else { return findNumber(searchList, leftIndex, middleIndex - 1, target, targetOccurrence); }        // Continues to search on the left.
                     break;
                     
@@ -42,7 +42,7 @@ int findNumber(vector<int> searchList, int leftIndex, int rightIndex, int target
                     
                 case last: {
                     
-                    if (searchList[middleIndex + 1] != target) { return middleIndex; }                                  // The last occurrence has been found.
+                    if (searchList[middleIndex + 1] != target) { return middleIndex; }                                   // The last occurrence has been found.
                     else { return findNumber(searchList, middleIndex + 1, rightIndex, target, targetOccurrence); }       // Continues to search on the right.
                     break;
                     
