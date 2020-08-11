@@ -1,4 +1,4 @@
-# Longest Subsequence
+# Longest subsequence
 
 ## Description
 Given `N` rows of `M` non-decreasing integers, find all the longest subsequences of integers throughout the rows, such that the first integer in the subsequence is greater than or equal to an integer `L`, and the last integer is less than or equal to `H`.

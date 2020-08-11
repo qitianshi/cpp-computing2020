@@ -1,4 +1,4 @@
-# Line Segments
+# Line segments
 
 ## Description
 A line segment along the x-axis can be presented by 2 integers `L` and `R`, where `L` and `R` are respectively the x-coordinates of the left and right ends. 

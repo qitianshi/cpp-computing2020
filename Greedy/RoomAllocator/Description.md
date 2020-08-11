@@ -1,4 +1,4 @@
-# Room Allocator
+# Room allocator
 
 ## Description
 Some schools are sending their students to attend workshops, which are to be conducted in multiple rooms. Find a way to allocate students so that no two students from the same school are in one room.

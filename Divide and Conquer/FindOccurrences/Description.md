@@ -1,4 +1,4 @@
-#  Find Occurrences
+#  Find occurrences
 
 ## Description
 Find the indexes of the first and last occurrence of a given integer in a list of sorted integers.

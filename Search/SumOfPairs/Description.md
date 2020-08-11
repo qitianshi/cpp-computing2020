@@ -1,4 +1,4 @@
-# Sum of Pairs
+# Sum of pairs
 
 ## Description
 Given a sequence of `N` non negative integers `(N ≤ 10,000)` and another integer `M`, find all possible unique pairs of integers `X` and `Y` from the sequence such that `M = X + Y`. 
