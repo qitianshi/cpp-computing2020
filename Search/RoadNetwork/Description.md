@@ -1,4 +1,4 @@
-#  Road network
+# Road network
 
 ## Description
 Given `N` cities, numbered `0` to `N-1`, on a road network, find the cities that are not reachable from each city.
