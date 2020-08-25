@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>LetterGrid.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>LineSegments.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>311A2ADF24B84406000FFBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31362FA324F50F2D00A12C70</key>
 		<dict>
 			<key>primary</key>
 			<true/>

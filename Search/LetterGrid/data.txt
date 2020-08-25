@@ -1,0 +1,7 @@
+6 10
+a..bc..a.d
+a.bbbc.dd.
+eeebcbd..d
+babaaad.df
+...ffffff.
+fff....bb.

@@ -10,6 +10,7 @@
 		31076E5224DA727200E5C101 /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31076E5124DA727200E5C101 /* NumberOfOnes.cpp */; };
 		311922FF24BEC71E009FF0F0 /* LineSegments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311922FE24BEC71E009FF0F0 /* LineSegments.cpp */; };
 		311A2AE324B84406000FFBFE /* testbed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311A2AE224B84406000FFBFE /* testbed.cpp */; };
+		31362FAC24F50F5A00A12C70 /* LetterGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */; };
 		3152365224D1C1C3000D6C5C /* RoomAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */; };
 		3156D2F824BDC9D30090066F /* LongestSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3156D2E624BD985A0090066F /* LongestSubsequence.cpp */; };
 		3184A71424E2806C00E95157 /* RoadNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3184A71324E2806C00E95157 /* RoadNetwork.cpp */; };
@@ -39,6 +40,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		311A2ADE24B84406000FFBFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		31362FA224F50F2D00A12C70 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -125,6 +135,10 @@
 		3119230124BEC84F009FF0F0 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		311A2AE024B84406000FFBFE /* testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testbed; sourceTree = BUILT_PRODUCTS_DIR; };
 		311A2AE224B84406000FFBFE /* testbed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testbed.cpp; sourceTree = "<group>"; };
+		31362FA424F50F2D00A12C70 /* LetterGrid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LetterGrid; sourceTree = BUILT_PRODUCTS_DIR; };
+		31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LetterGrid.cpp; sourceTree = "<group>"; };
+		31362FAD24F50F6400A12C70 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31362FAE24F50F6E00A12C70 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		3152364A24D1C19B000D6C5C /* RoomAllocator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoomAllocator; sourceTree = BUILT_PRODUCTS_DIR; };
 		3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RoomAllocator.cpp; sourceTree = "<group>"; };
 		3152365324D1C1FE000D6C5C /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -166,6 +180,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		311A2ADD24B84406000FFBFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31362FA124F50F2D00A12C70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,8 +299,19 @@
 				31858E2F24D1C8D400E72D20 /* FindOccurrences */,
 				31076E4A24DA725800E5C101 /* NumberOfOnes */,
 				3184A70C24E2805000E95157 /* RoadNetwork */,
+				31362FA424F50F2D00A12C70 /* LetterGrid */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		31362FA524F50F2D00A12C70 /* LetterGrid */ = {
+			isa = PBXGroup;
+			children = (
+				31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */,
+				31362FAD24F50F6400A12C70 /* data.txt */,
+				31362FAE24F50F6E00A12C70 /* Description.md */,
+			);
+			path = LetterGrid;
 			sourceTree = "<group>";
 		};
 		3152364B24D1C19B000D6C5C /* RoomAllocator */ = {
@@ -355,6 +387,7 @@
 				3185D96924B8451E007DF821 /* SumOfPairs */,
 				3156D2F224BDC9720090066F /* LongestSubsequence */,
 				3184A70D24E2805000E95157 /* RoadNetwork */,
+				31362FA524F50F2D00A12C70 /* LetterGrid */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -421,6 +454,23 @@
 			name = testbed;
 			productName = testbed;
 			productReference = 311A2AE024B84406000FFBFE /* testbed */;
+			productType = "com.apple.product-type.tool";
+		};
+		31362FA324F50F2D00A12C70 /* LetterGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31362FAA24F50F2D00A12C70 /* Build configuration list for PBXNativeTarget "LetterGrid" */;
+			buildPhases = (
+				31362FA024F50F2D00A12C70 /* Sources */,
+				31362FA124F50F2D00A12C70 /* Frameworks */,
+				31362FA224F50F2D00A12C70 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetterGrid;
+			productName = LetterGrid;
+			productReference = 31362FA424F50F2D00A12C70 /* LetterGrid */;
 			productType = "com.apple.product-type.tool";
 		};
 		3152364924D1C19B000D6C5C /* RoomAllocator */ = {
@@ -560,6 +610,9 @@
 					311A2ADF24B84406000FFBFE = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					31362FA324F50F2D00A12C70 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					3152364924D1C19B000D6C5C = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -606,6 +659,7 @@
 				31858E2E24D1C8D400E72D20 /* FindOccurrences */,
 				31076E4924DA725800E5C101 /* NumberOfOnes */,
 				3184A70B24E2805000E95157 /* RoadNetwork */,
+				31362FA324F50F2D00A12C70 /* LetterGrid */,
 			);
 		};
 /* End PBXProject section */
@@ -632,6 +686,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				311A2AE324B84406000FFBFE /* testbed.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31362FA024F50F2D00A12C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31362FAC24F50F5A00A12C70 /* LetterGrid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +929,26 @@
 			};
 			name = Release;
 		};
+		31362FA824F50F2D00A12C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31362FA924F50F2D00A12C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3152364E24D1C19B000D6C5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1050,6 +1132,15 @@
 			buildConfigurations = (
 				311A2AE524B84406000FFBFE /* Debug */,
 				311A2AE624B84406000FFBFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31362FAA24F50F2D00A12C70 /* Build configuration list for PBXNativeTarget "LetterGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31362FA824F50F2D00A12C70 /* Debug */,
+				31362FA924F50F2D00A12C70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
