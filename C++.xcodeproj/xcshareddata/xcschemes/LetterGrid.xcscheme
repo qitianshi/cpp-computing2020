@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/tianshiqi/Documents/School/Computing/C++/Search/LetterGrid"
+      customWorkingDirectory = "/Users/tianshiqi/Documents/School/Computing/C++/Search/Depth-first search/LetterGrid"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"

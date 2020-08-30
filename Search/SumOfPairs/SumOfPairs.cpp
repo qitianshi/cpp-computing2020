@@ -53,7 +53,7 @@ int main() {
     int arraySize;
     fin >> arraySize;
     
-    int *sequence = new int[arraySize];
+    int* sequence = new int[arraySize];
     for (int i = 0; i < arraySize; ++ i) { fin >> sequence[i]; }
     
     int targetValue;

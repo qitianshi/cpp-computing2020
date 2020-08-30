@@ -259,7 +259,7 @@ int main() {
         cout << "Sort method: ";
         cin >> sortMethod;
         
-        int *sortArray = new int[arraySize];        // Declares a pointer to a dynamically allocated array, instead of declaring the array itself. This is necessary because arraySize is not known at buildtime, so the code crashes if the array is too large.
+        int* sortArray = new int[arraySize];        // Declares a pointer to a dynamically allocated array, instead of declaring the array itself. This is necessary because arraySize is not known at buildtime, so the code crashes if the array is too large.
         
         // Generates a random sequence of numbers for the array.
         srand(static_cast<unsigned int>(time(NULL)));       // Casts time(), type long, to unsigned int.

@@ -22,7 +22,7 @@ using namespace std;
 /// @param target The character to be found.
 /// @param size A pointer to the variable that stores the size of the letter.
 /// @param visited A pointer to the two-dimensional vector of visited grid positions.
-void sizeOfContiguousArea(vector<vector<char>> grid, int yCoordinate, int xCoordinate, char target, int *size, vector<vector<bool>> *visited) {
+void sizeOfContiguousArea(vector<vector<char>> grid, int yCoordinate, int xCoordinate, char target, int* size, vector<vector<bool>>* visited) {
 
     // Possible movement combinations.
     int dy[8] = {1,  1,  1,  0,  -1, -1, -1, 0};
@@ -40,7 +40,7 @@ void sizeOfContiguousArea(vector<vector<char>> grid, int yCoordinate, int xCoord
         
         (*size) ++;
         
-        for (int i = 0; i < 8; ++ i) { sizeOfContiguousArea(grid, yCoordinate + dy[i], xCoordinate + dx[i], target, &(*size), &(*visited)); }
+        for (int i = 0; i < 8; ++ i) { sizeOfContiguousArea(grid, yCoordinate + dy[i], xCoordinate + dx[i], target, size, visited); }
         
     }
 

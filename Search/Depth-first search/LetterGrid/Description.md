@@ -4,9 +4,9 @@
 Given a rectangular grid (`m` rows, `n` columns) of either alphabetical letters or a period character `.`, find the size of the biggest contiguous area of each letter.
 
 ## Input (`data.txt`)
-The first line will two integers, `m` and `n` (`m < 100`, `n < 100`).
+The first line will be two integers, `m` and `n` (`m < 100`, `n < 100`).
 
-The next `m` rows will be `n` characters each.
+The next `m` rows will be `n` characters each, giving the grid.
 
 ## Output (console)
 List the letters in alphabetical order with the size of the biggest contiguous area for that letter. 

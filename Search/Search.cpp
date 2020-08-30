@@ -78,7 +78,7 @@ int main() {
         cin >> searchMethod;
         
         // Generates a list of unique integers in random order.
-        int *randomizedNumbers = new int[vectorSize];
+        int* randomizedNumbers = new int[vectorSize];
         for (int i = 0; i < vectorSize; ++ i) { randomizedNumbers[i] = i; }     // Fills each array with an incremental set of integers.
         srand(static_cast<unsigned int>(time(NULL)));
         for (int i = 0; i < vectorSize; ++ i) { swap(randomizedNumbers[rand() % vectorSize], randomizedNumbers[rand() % vectorSize]); }     // Randomizes the order of elements in the array.
