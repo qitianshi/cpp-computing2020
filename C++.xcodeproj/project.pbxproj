@@ -333,7 +333,9 @@
 				3185D95E24B844F9007DF821 /* Search */,
 				311922F224BEC6B6009FF0F0 /* Greedy */,
 				3152365524D1C7B5000D6C5C /* Divide and Conquer */,
-				31A309AA24FBA35A0090E6F1 /* docs */,
+				31A309A724FB8E8E0090E6F1 /* README.md */,
+				31A309AD24FBA6D40090E6F1 /* CONTRIBUTING.md */,
+				31A309A924FBA2570090E6F1 /* LICENSE.txt */,
 				311A2AD324B843EF000FFBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -453,16 +455,6 @@
 				3115A14D24B876310017D543 /* Description.md */,
 			);
 			path = SumOfPairs;
-			sourceTree = "<group>";
-		};
-		31A309AA24FBA35A0090E6F1 /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				31A309A724FB8E8E0090E6F1 /* README.md */,
-				31A309AD24FBA6D40090E6F1 /* CONTRIBUTING.md */,
-				31A309A924FBA2570090E6F1 /* LICENSE.txt */,
-			);
-			path = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
