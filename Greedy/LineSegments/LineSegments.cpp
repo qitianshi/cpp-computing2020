@@ -2,7 +2,7 @@
 // Created on 15/7/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
 // Finds the minimum number of line segments that can combine into a given line.
 

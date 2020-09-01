@@ -2,7 +2,7 @@
 // Created on 14/7/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
 // Find the longest non-decreasing sequence of numbers within a given range.
 

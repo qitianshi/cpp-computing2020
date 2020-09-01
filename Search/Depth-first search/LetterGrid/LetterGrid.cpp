@@ -2,7 +2,7 @@
 // Created on 25/8/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
 // Finds the largest contiguous area of letters in a grid.
 

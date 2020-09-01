@@ -2,7 +2,7 @@
 // Created on 23/6/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
 // Insertion sort, selection sort, bubble sort, merge sort, quicksort, counting sort, and heap sort algorithms.
 

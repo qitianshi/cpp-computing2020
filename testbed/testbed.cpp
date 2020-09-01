@@ -2,9 +2,9 @@
 // Created on 23/6/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
-// C++ experimenter file.
+// C++ experimentation file.
 
 
 #include <bits/stdc++.h>

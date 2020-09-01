@@ -2,7 +2,7 @@
 // Created on 26/8/20
 // Running on macOS 10.15
 
-// Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+// GNU General Public License version 3
 
 // Finds the shortest path between connected islands.
 
