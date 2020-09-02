@@ -12,8 +12,6 @@
 		311A2AE324B84406000FFBFE /* testbed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311A2AE224B84406000FFBFE /* testbed.cpp */; };
 		31294BDF24FE2C28003F0D00 /* ShortestMazePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31294BDE24FE2C28003F0D00 /* ShortestMazePath.cpp */; };
 		31362FAC24F50F5A00A12C70 /* LetterGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */; };
-		314060E524FFCD300016942F /* FindOccurrences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 314060E424FFCD300016942F /* FindOccurrences.cpp */; };
-		314060E924FFCDD10016942F /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 314060E824FFCDD10016942F /* NumberOfOnes.cpp */; };
 		3152365224D1C1C3000D6C5C /* RoomAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */; };
 		3156D2F824BDC9D30090066F /* LongestSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3156D2E624BD985A0090066F /* LongestSubsequence.cpp */; };
 		3184A71424E2806C00E95157 /* RoadNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3184A71324E2806C00E95157 /* RoadNetwork.cpp */; };
@@ -164,12 +162,6 @@
 		31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LetterGrid.cpp; sourceTree = "<group>"; };
 		31362FAD24F50F6400A12C70 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		31362FAE24F50F6E00A12C70 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
-		314060E424FFCD300016942F /* FindOccurrences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindOccurrences.cpp; sourceTree = "<group>"; };
-		314060E624FFCD740016942F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
-		314060E724FFCD900016942F /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
-		314060E824FFCDD10016942F /* NumberOfOnes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberOfOnes.cpp; sourceTree = "<group>"; };
-		314060EA24FFCDEA0016942F /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
-		314060EB24FFCDF20016942F /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		3152364A24D1C19B000D6C5C /* RoomAllocator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoomAllocator; sourceTree = BUILT_PRODUCTS_DIR; };
 		3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RoomAllocator.cpp; sourceTree = "<group>"; };
 		3152365324D1C1FE000D6C5C /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -343,7 +335,6 @@
 				3185D95124B844A3007DF821 /* Sort */,
 				3185D95E24B844F9007DF821 /* Search */,
 				311922F224BEC6B6009FF0F0 /* Greedy */,
-				314060E124FFCCB60016942F /* Divide and conquer */,
 				31A309A724FB8E8E0090E6F1 /* README.md */,
 				31A309A924FBA2570090E6F1 /* LICENSE.txt */,
 				311A2AD324B843EF000FFBFE /* Products */,
@@ -388,35 +379,6 @@
 				31362FAE24F50F6E00A12C70 /* Description.md */,
 			);
 			path = LetterGrid;
-			sourceTree = "<group>";
-		};
-		314060E124FFCCB60016942F /* Divide and conquer */ = {
-			isa = PBXGroup;
-			children = (
-				314060E224FFCCC70016942F /* FindOccurrences */,
-				314060E324FFCD0A0016942F /* NumberOfOnes */,
-			);
-			path = "Divide and conquer";
-			sourceTree = "<group>";
-		};
-		314060E224FFCCC70016942F /* FindOccurrences */ = {
-			isa = PBXGroup;
-			children = (
-				314060E424FFCD300016942F /* FindOccurrences.cpp */,
-				314060E624FFCD740016942F /* data.txt */,
-				314060E724FFCD900016942F /* Description.md */,
-			);
-			path = FindOccurrences;
-			sourceTree = "<group>";
-		};
-		314060E324FFCD0A0016942F /* NumberOfOnes */ = {
-			isa = PBXGroup;
-			children = (
-				314060E824FFCDD10016942F /* NumberOfOnes.cpp */,
-				314060EA24FFCDEA0016942F /* data.txt */,
-				314060EB24FFCDF20016942F /* Description.md */,
-			);
-			path = NumberOfOnes;
 			sourceTree = "<group>";
 		};
 		3152364B24D1C19B000D6C5C /* RoomAllocator */ = {
@@ -805,7 +767,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314060E924FFCDD10016942F /* NumberOfOnes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,7 +830,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314060E524FFCD300016942F /* FindOccurrences.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
