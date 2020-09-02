@@ -7,7 +7,7 @@
 		<key>FindOccurrences.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>11</integer>
 		</dict>
 		<key>IslandHopper.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>LineSegments.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>9</integer>
 		</dict>
 		<key>LongestSubsequence.xcscheme_^#shared#^_</key>
 		<dict>
@@ -32,7 +32,7 @@
 		<key>NumberOfOnes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>12</integer>
 		</dict>
 		<key>RoadNetwork.xcscheme_^#shared#^_</key>
 		<dict>
@@ -42,12 +42,17 @@
 		<key>RoomAllocator.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Search.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>ShortestMazePath.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Sort.xcscheme_^#shared#^_</key>
 		<dict>
@@ -58,6 +63,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>fibonacci.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 		<key>testbed.xcscheme_^#shared#^_</key>
 		<dict>
@@ -83,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>311A2ADF24B84406000FFBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31294BD424FE2BB5003F0D00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
