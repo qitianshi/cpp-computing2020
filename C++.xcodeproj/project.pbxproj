@@ -192,7 +192,6 @@
 		3185D96A24B8451E007DF821 /* SumOfPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfPairs.cpp; sourceTree = "<group>"; };
 		31A309A724FB8E8E0090E6F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		31A309A924FBA2570090E6F1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		31A309AD24FBA6D40090E6F1 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,9 +354,7 @@
 				3185D95E24B844F9007DF821 /* Search */,
 				311922F224BEC6B6009FF0F0 /* Greedy */,
 				3152365524D1C7B5000D6C5C /* Divide and conquer */,
-				3189F06924FF5BDD001920DB /* Dynamic programming */,
 				31A309A724FB8E8E0090E6F1 /* README.md */,
-				31A309AD24FBA6D40090E6F1 /* CONTRIBUTING.md */,
 				31A309A924FBA2570090E6F1 /* LICENSE.txt */,
 				311A2AD324B843EF000FFBFE /* Products */,
 			);
@@ -489,13 +486,6 @@
 				3115A14D24B876310017D543 /* Description.md */,
 			);
 			path = SumOfPairs;
-			sourceTree = "<group>";
-		};
-		3189F06924FF5BDD001920DB /* Dynamic programming */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Dynamic programming";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
