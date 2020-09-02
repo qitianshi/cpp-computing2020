@@ -23,7 +23,7 @@ This project was built with C++17.
 This project is still being maintained at the moment. More lesson files will be added as they become available, and existing code will continue to be updated.
 
 ## Acknowledgments
-My thanks go to [@Lumarstar](https://github.com/Lumarstar) for helping out with this project, and to Mr Koh Kim Tian from Hwa Chong Institution. 
+My thanks goes to [@Lumarstar](https://github.com/Lumarstar) for helping out with this project, and to Mr Koh Kim Tian from Hwa Chong Institution. 
 
 ## License
 This project shall be licensed under GPU GPL v3.0.
