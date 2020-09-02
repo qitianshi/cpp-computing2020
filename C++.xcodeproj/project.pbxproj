@@ -18,6 +18,8 @@
 		3185D95824B844C0007DF821 /* Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95724B844C0007DF821 /* Sort.cpp */; };
 		3185D96024B844F9007DF821 /* Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95F24B844F9007DF821 /* Search.cpp */; };
 		3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D96A24B8451E007DF821 /* SumOfPairs.cpp */; };
+		31EC1A8524FFCFF700CAAD47 /* FindOccurrences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */; };
+		31EC1A8924FFD04D00CAAD47 /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -184,6 +186,12 @@
 		3185D96A24B8451E007DF821 /* SumOfPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfPairs.cpp; sourceTree = "<group>"; };
 		31A309A724FB8E8E0090E6F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		31A309A924FBA2570090E6F1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindOccurrences.cpp; sourceTree = "<group>"; };
+		31EC1A8624FFD01A00CAAD47 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31EC1A8724FFD02F00CAAD47 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
+		31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberOfOnes.cpp; sourceTree = "<group>"; };
+		31EC1A8A24FFD05C00CAAD47 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31EC1A8B24FFD07200CAAD47 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +343,7 @@
 				3185D95124B844A3007DF821 /* Sort */,
 				3185D95E24B844F9007DF821 /* Search */,
 				311922F224BEC6B6009FF0F0 /* Greedy */,
+				31EC1A8124FFCFB100CAAD47 /* Divide and conquer */,
 				31A309A724FB8E8E0090E6F1 /* README.md */,
 				31A309A924FBA2570090E6F1 /* LICENSE.txt */,
 				311A2AD324B843EF000FFBFE /* Products */,
@@ -448,6 +457,35 @@
 				3115A14D24B876310017D543 /* Description.md */,
 			);
 			path = SumOfPairs;
+			sourceTree = "<group>";
+		};
+		31EC1A8124FFCFB100CAAD47 /* Divide and conquer */ = {
+			isa = PBXGroup;
+			children = (
+				31EC1A8224FFCFBE00CAAD47 /* FindOccurrences */,
+				31EC1A8324FFCFC800CAAD47 /* NumberOfOnes */,
+			);
+			path = "Divide and conquer";
+			sourceTree = "<group>";
+		};
+		31EC1A8224FFCFBE00CAAD47 /* FindOccurrences */ = {
+			isa = PBXGroup;
+			children = (
+				31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */,
+				31EC1A8624FFD01A00CAAD47 /* data.txt */,
+				31EC1A8724FFD02F00CAAD47 /* Description.md */,
+			);
+			path = FindOccurrences;
+			sourceTree = "<group>";
+		};
+		31EC1A8324FFCFC800CAAD47 /* NumberOfOnes */ = {
+			isa = PBXGroup;
+			children = (
+				31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */,
+				31EC1A8A24FFD05C00CAAD47 /* data.txt */,
+				31EC1A8B24FFD07200CAAD47 /* Description.md */,
+			);
+			path = NumberOfOnes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -767,6 +805,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EC1A8924FFD04D00CAAD47 /* NumberOfOnes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +869,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EC1A8524FFCFF700CAAD47 /* FindOccurrences.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
