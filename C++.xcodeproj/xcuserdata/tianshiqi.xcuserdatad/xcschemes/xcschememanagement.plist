@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Fibonacci.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>FindOccurrences.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -59,6 +64,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>SumOfNumbers.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>SumOfPairs.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -93,6 +103,16 @@
 			<true/>
 		</dict>
 		<key>311A2ADF24B84406000FFBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>311DA62025039A51006BF594</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>311DA62E2503A004006BF594</key>
 		<dict>
 			<key>primary</key>
 			<true/>
