@@ -1,15 +1,22 @@
 # Letter grid
+Find the largest contiguous area of letters in a grid.
 
 ## Description
-Given a rectangular grid (`m` rows, `n` columns) of either alphabetical letters or a period character `.`, find the size of the biggest contiguous area of each letter.
+Given an `m`-row by `n`-column rectangular grid of characters, find the size of the biggest contiguous area for each letter.
 
-## Input (`data.txt`)
-The first line will be two integers, `m` and `n` (`m < 100`, `n < 100`).
+## Constraints
+`m < 100`,  `m ∈ ℤ`
 
-The next `m` rows will be `n` characters each, giving the grid.
+`n < 100`,  `n ∈ ℤ`
 
-## Output (console)
-List the letters in alphabetical order with the size of the biggest contiguous area for that letter. 
+## Input
+*From `data.txt`:*
+* `line 1`: the two integers, `m` and `n`.
+* `subsequent m lines`: one row of `n` characters in the grid.
+
+## Output
+*To the console:*
+* For each letter, the size of the largest contiguous area.
 
 ## Sample I/O
 ### Input
@@ -32,5 +39,3 @@ d 7
 e 3
 f 10
 ```
-
-*City `5` can reach every other city.*

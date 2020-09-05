@@ -1,17 +1,23 @@
 # Road network
+Find cities that are not connected in a road network.
 
 ## Description
-Given `N` cities, numbered `0` to `N-1`, on a road network, find the cities that are not reachable from each city.
+There are `N` cities, numbered `0` to `N-1`, on a road network with `M` routes. For each city, find the cities that are not reachable.
 
-## Input (`data.txt`)
-The first line will be an integer `N`, `(0 < N ≤ 100)`, the number of cities.
+## Constraints
+`0 < N ≤ 100`, `N ∈ ℤ`
 
-The second line will be an integer `M`, the number of routes.
+`M ∈ ℤ`
 
-Each of the following `M` lines will consist of two integers `a` and `b`, representing a one way route from city `a` to city `b`.
+## Input
+*From `data.txt`:*
+* `line 1`: the integer, `N`.
+* `line 2`: the integer `M`.
+* `subsequent M lines`: two integers, representing a one way road between the two cities.
 
-## Output (console)
-A list of cities that are not reachable from each city.
+## Output
+*To the console:*
+* For each city, a list of unconnected cities.
 
 ## Sample I/O
 ### Input

@@ -1,13 +1,16 @@
-#  Number of 1s
+# Number of 1s
+Find the number of 1s in a sorted list.
 
 ## Description
 Given a number of `0`s followed by a number of `1`s, find the number of `1`s.
 
-## Input (`data.txt`)
-A number of `0`s followed by a number of `1`s.
+## Input
+*From `data.txt`:*
+* `line 1`: a number of `0`s followed by a number of `1`s.
 
-## Output (console)
-The number of `1`s in the given sequence.
+## Output
+*To the console:*
+* The number of `1`s in the given list.
 
 ## Sample I/O
 ### Input

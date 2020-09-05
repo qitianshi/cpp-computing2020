@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Finds the number of 1s in a sorted sequence.
+// Finds the number of 1s in a sorted list.
 
 
 #include <iostream>

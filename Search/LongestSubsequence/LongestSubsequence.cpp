@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Find the longest non-decreasing sequence of numbers within a given range.
+// Finds the longest non-decreasing subsequence within a given range.
 
 
 #include <iostream>

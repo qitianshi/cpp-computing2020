@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Finds unique pairs of integers that sum to a given number.
+// Finds unique pairs of integers that add to a given number.
 
 
 #include <iostream>

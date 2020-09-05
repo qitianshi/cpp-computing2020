@@ -1,21 +1,26 @@
 # Sum of pairs
+Find unique pairs of integers that add to a given number.
 
 ## Description
-Given a sequence of `N` non negative integers `(N ≤ 10,000)` and another integer `M`, find all possible unique pairs of integers `X` and `Y` from the sequence such that `M = X + Y`. 
+Given a number, `M`, and a list, `L`, of `N` non-negative integers, find every unique pair in the list whose sum is `M`. 
 
-For `M=5`; the pair `X=2`, `Y=3` is considered as the same as `X=3`, `Y=2`.
+`1+2` is the same as `2+1`.
 
-## Input (`data.txt`)
-The first line will be an integer `N`. 
+## Constraints
+`N ≤ 10 000`, `N ∈ ℤ`
 
-`N` integers will follow, delimited by a space or newline character.
+`Lᵢ ≥ 0`, `Lᵢ ∈ ℤ`
 
-The last line will be an integer `M`.
+## Input
+*From `data.txt`:*
+* `line 1`: the integer, `N`.
+* `line 2`: the list of space-separated integers, `L`.
+* `line 3`: the number, `M`.
 
-## Output (console)
-Unique pairs of the integers `X` and `Y`, one per line, in ascending order of `X`.
-
-If there is no such pair, output `None`.
+## Output
+*To the console:*
+* Each unique pair of integers, smaller first, one pair per line, in ascending order.
+* Or, if there are no possible combinations, output `None`.
 
 ## Sample I/O
 ### Input

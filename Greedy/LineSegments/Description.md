@@ -1,19 +1,28 @@
 # Line segments
+Find the minimum number of line segments that can combine into a given line.
 
 ## Description
-A line segment along the x-axis can be presented by 2 integers `L` and `R`, where `L` and `R` are respectively the x-coordinates of the left and right ends. 
+A line segment along the x-axis can be represented by 2 integers `L` and `R`, where `L` and `R` are respectively the x-coordinates of the left and right ends. 
 
-Given a number of line segments along the x-axis, find the minimum number of line segments which can cover `OM`.
+Given a number of line segments along the x-axis, find the minimum number of line segments which can cover a bigger line `OM`.
 
-## Input (`data.txt`)
-The first line will be a positive integer `M`.
+## Constraints
+`M ≥ 0`, `M ∈ ℤ`
 
-The following lines will contain two integers each, `L` and `R`.
+`L ∈ ℤ`
 
-The final line is `0 0`, representing the end of input.
+`R ∈ ℤ`
 
-## Output (console)
-The minimum number of line segments to cover `OM`, followed by the coordinates of each line segment, one per line.
+## Input
+*From `data.txt`:*
+* `line 1`: the integer, `M`.
+* `subsequent lines`: two integers, `L` and `R`.
+* `final line`: `0 0`, representing the end of input.
+
+## Output
+*To the console:*
+* The minimum number of line segments to cover `OM`.
+* The x-coordinates of the left and right ends of each line segment, one per line.
 
 ## Sample I/O
 ### Input

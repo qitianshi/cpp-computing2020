@@ -1,19 +1,26 @@
 # Longest subsequence
+Find the longest non-decreasing subsequence within a given range.
 
 ## Description
-Given `N` rows of `M` non-decreasing integers, find all the longest subsequences of integers throughout the rows, such that the first integer in the subsequence is greater than or equal to an integer `L`, and the last integer is less than or equal to `H`.
+Given a sequence, `S`, of `N` rows of `M` non-decreasing integers, find the longest subsequences where the first number is greater than or equal to `L`, and the last integer is less than or equal to `H`.
 
-## Input (`data.txt`)
-The first line will be two integers `N` and `M` separated by a space.
+## Constraints
+`N ∈ ℤ`
 
-The next `N` lines will contain `M` non-decreasing integers each.
+`M ∈ ℤ`
 
-The final line will be two integers `L` and `H` separated by a space.
+`Sᵢ ≤ Sᵢ₊₁`, `Sᵢ ∈ ℤ`
 
-## Output (console)
-The longest continuous subsequence(s), in the order that they appear.
+## Input
+*From `data.txt`:*
+* `line 1`: the two integers `N` and `M`, separated by a space.
+* `subsequent N lines`: one row of `M` space-separated numbers.
+* `final line`: the two integers `L` and `H`, separated by a space.
 
-If there is no such subsequence, output `No Solution`.
+## Output
+*To the console:*
+* Each subsequence, one per line, in the order that they appear.
+* Or, if there are no possible subsequences, output `No Solution`.
 
 ## Sample I/O
 ### Input

@@ -1,19 +1,23 @@
-#  Find occurrences
+# Find occurrences
+Find the first and last occurrence of a given integer in a list.
 
 ## Description
-Find the indexes of the first and last occurrence of a given integer in a list of sorted integers.
+Find the indexes of the first and last occurrence of a given integer, `N` in a list of sorted integers.
 
-Solve this using Divide and Conquer.
+Solve this using a divide-and-conquer algorithm.
 
-## Input (`data.txt`)
-The first line will be the target integer.
+## Constraints
+`N ∈ ℤ`
 
-The second line will be the list of integers.
+## Input
+*From `data.txt`:*
+* `line 1`: the integer, `N`.
+* `line 2`: the list of integers.
 
-## Output (console)
-Two lines, respectively the indexes of the first and last occurrences of the target integer.
-
-If the target integer does not exist in the list, output `-1`.
+## Output
+*To the console:*
+* The indexes of the first and last occurrences of `N`, one per line.
+* Or, if the target integer does not exist in the list, output `-1`.
 
 ## Sample I/O
 ### Input

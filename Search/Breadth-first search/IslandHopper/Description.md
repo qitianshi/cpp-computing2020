@@ -1,26 +1,29 @@
 # Island hopper
+Find the shortest path between connected islands.
 
 ## Description
-There are `N` islands, numbered `1` to `N`, some of which are connected by `M` bidirectional bridges. Using the optimal route, find the minimum number of bridges that must be crossed to travel from one island, `X`, to another, `Y`.
+There are `N` islands, numbered `1` to `N`, some of which are connected by `M` bidirectional bridges. Using the optimal route, find the minimum number of bridges that must be crossed to travel from one island, `x`, to another, `y`.
 
 ## Constraints
-`N ≥ 1`
+`N ≥ 1`, `N ∈ ℤ`
 
-`M ≤ 1000`
+`M ≤ 1000`, `M ∈ ℤ`
 
-`1 ≤ x, y, ≤ 1000` 
+`x ≥ 1`, `x ∈ ℤ`
+
+`y ≤ 1000`, `y ∈ ℤ`
 
 `x ≠ y`
 
-## Input (`data.txt`)
-The first line will be two integers, `N` and `M`.
+## Input
+*From `data.txt`:*
+* `line 1`: the two integers, `N` and `M`.
+* `subsequent m lines`: two integers, representing a two-way bridge between the two islands.
+* `final line`: the two integers, `x` and `y`.
 
-`M` lines will follow, each with two integral island numbers that are connected by a bridge.
-
-The last line will be two integers, `X` and `Y`.
-
-## Output (console)
-An integer, the minimum number of bridges that need to crossed.
+## Output
+*To the console:*
+* An integer, the minimum number of bridges that need to crossed.
 
 ## Sample I/O
 ### Input

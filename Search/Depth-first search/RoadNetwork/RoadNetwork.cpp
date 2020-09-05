@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Finds cities that are not connected to each other in a road network.
+// Finds cities that are not connected in a road network.
 
 
 #include <iostream>

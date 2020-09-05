@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Finds the length of the shortest path between two points in a maze.
+// Finds the length of the shortest path between two positions in a maze.
 
 
 #include <iostream>

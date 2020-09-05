@@ -1,21 +1,26 @@
 # Room allocator
+Allocate students to rooms so that no two students from the same school are in one room.
 
 ## Description
-Some schools are sending their students to attend workshops, which are to be conducted in multiple rooms. Find a way to allocate students so that no two students from the same school are in one room.
+`S` schools, numbered `1` to `S`, are sending their students to attend workshops, to be conducted in `R` rooms, numbered `1` to `R`. Allocate students so that no two students from the same school are in one room.
 
-`S` is the number of schools and `R` is the number of rooms. Schools are numbered `1...S` and rooms `1...R`. `1 ≤ S ≤ 100`, `1 ≤ R ≤ 100`, and `S ≤ R`.
+## Constraints
+`1 ≤ S ≤ 100`, `S ∈ ℤ`
 
-## Input (`data.txt`)
-The first line will be two integers `S` and `R`.
+`1 ≤ R ≤ 100`, `R ∈ ℤ`
 
-The second line will be `S` integers, the number of students from each school, from `1` to `S`.
+`S ≤ R`
 
-The third line will be `R` integers, the capacity of each room, from `1` to `R`.
+## Input
+*From `data.txt`:*
+* `line 1`: the two integers `S` and `R`.
+* `line 2`: `S` integers, the number of students from each school.
+* `line 3`: `R` integers, the capacity of each room.
 
 ## Output (console)
-`S` lines of integers, each with the room allocations for that school in ascending order.
-
-If there is no possible solution, output `0`.
+*To the console:*
+* `S` lines, each with the room allocations for that school in ascending order.
+* Or, if there are no possible solutions, output `0`.
 
 ## Sample I/O
 ### Input 1
