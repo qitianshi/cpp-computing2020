@@ -7,10 +7,10 @@
 // Finds the nth Fibonacci number.
 
 
-//#include <iostream>
-//#include <utility>
-//#include <chrono>       // steady_clock
-#include <bits/stdc++.h>
+#include <iostream>
+#include <utility>
+#include <chrono>       // steady_clock
+#include <math.h>       // pow
 using namespace std;
 
 int main() {
@@ -27,6 +27,7 @@ int main() {
         for (int i = 2; i < target; ++ i) {     // The loop is skipped for the first two Fibonacci numbers; the result remains at 1.
             
             result = previousNumbers.first + previousNumbers.second;
+            if (target > 93) { result %= static_cast<unsigned long long>(pow(10.0, 18.0)); }        // The 93rd Fibonacci number is the largest that can be stored in a 64-bit unsigned integer.
             
             // Refreshes the stored previous numbers with new values.
             swap(previousNumbers.first, previousNumbers.second);
@@ -38,7 +39,8 @@ int main() {
     
     auto end = chrono::steady_clock::now();         // Ends the timer.
     
-    cout << result << '\n';
+    if (target > 93) { cout << "Last 18 digits of "; }
+    cout << "Fibonacci number " << target << ": " << result << '\n';
     cout << "Completed in " << chrono::duration_cast<chrono::microseconds>(end - start).count() << " µs.\n";
     
     return 0;
