@@ -19,6 +19,7 @@ To contribute directly, create a [branch](https://docs.github.com/en/github/coll
 * __Add comments and documentation so others can follow along.__ Describe what your code is doing (but only where it isn't already obvious); document functions, structures, classes, and other components of your code; and explain each step of your algorithms. Use proper grammar and spelling.
 * __Check that your code follows the best possible logic.__ Don't repeat yourself, never hard-code or brute-force, avoid deep nesting, and make sure your code follows a logical sequence.
 * __Follow the conventions for branches, pull requests and commit messages.__ Be descriptive and concise; don't create vaguely-worded commit messages, branch names, or pull requests. If you need to, remember to reference [commit, issue, or pull request numbers](https://docs.github.com/en/github/writing-on-github/autolinked-references-and-urls); [files](https://docs.github.com/en/github/managing-files-in-a-repository/getting-permanent-links-to-files); and [code snippets](https://docs.github.com/en/github/managing-your-work-on-github/creating-a-permanent-link-to-a-code-snippet).
+* __Use inclusive language__. Avoid terms like "master" or "slave"; and "whitelist" or "blacklist". Instead use "main", "primary", or "replica; and "allow list" or "deny list".
 
 Or, you can [submit an issue on GitHub](https://guides.github.com/features/issues/) to discuss tasks, enhancements, and bugs.
 
