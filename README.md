@@ -9,7 +9,7 @@ Use it as a reference or to improve your own work! Or, even better, you can [con
 ## Getting started
 This isn't prepackaged software, it's a collection of individual files; there aren't any installers or packages. Download or copy files or snippets and run it in your own projects.
 
-Every assignment folder includes a problem description, a data file, and source code — you'll need all three to run it. Remember to set up your IDE or compiler to read from file by choosing a custom working directory. Check the specific instructions for your editor.
+Assignment folders typically include a problem description, a data file, and source code — you'll need all three to run it. Remember to set up your IDE or compiler to read from file by choosing a custom working directory. Check the specific instructions for your editor.
 
 ## Contributing
 You're welcome to contribute to this project!
