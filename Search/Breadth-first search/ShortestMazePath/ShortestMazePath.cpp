@@ -15,26 +15,11 @@
 #include <string>       // to_string
 using namespace std;
 
-enum NodeType { wall, space };
-
-struct MazeNode {
+/// A position in the maze, either a space or a wall.
+struct Position {
     
-    int xPosition;
-    int yPosition;
-    
-    NodeType type;
-    int distanceFromOrigin;
-    bool wasVisited;
-    
-    MazeNode(int xPosition_, int yPosition_, NodeType type_, bool wasVisited_) {
-        
-        xPosition = xPosition_;
-        yPosition = yPosition_;
-        
-        type = type_;
-        distanceFromOrigin = -1;
-        wasVisited = wasVisited_;
-    }
+    int distanceFromOrigin;     // Number of movements between this position and the origin.
+    bool visitable;             // Whether this position is visitable by the search algorithm. Walls and already visited positions are unvisitable. There is no need to explicitly distinguish walls from spaces.
     
 };
 
@@ -45,84 +30,95 @@ int main() {
     int height, width;
     fin >> height >> width;
     
-    vector<vector<MazeNode>> maze;
-    vector<pair<int, int>> targets;
-    for (int i = 0; i < height; ++ i) {
+    Position maze[height][width];                                           // Stores the maze in an array. FIXME: Use a dynamically allocated array.
+    pair<Position*, Position*> targets = {&maze[0][0], &maze[0][0]};        // Positions are stored as y- and x-coordinates.
+    for (int i = 0; i < height; ++ i) for (int j = 0; j < width; ++ j) {
         
-        vector<MazeNode> nextRow;
-        for (int j = 0; j < width; ++ j) {
-            
-            char input;
-            fin >> input;
-            
-            switch (input) {
-                    
-                // Wall
-                case 'x': {
-                    nextRow.push_back({j, i, wall, true});
-                    break;
-                }
-                    
-                // Space
-                case '-': {
-                    nextRow.push_back({j, i, space, false});
-                    break;
-                }
-                    
-                // Target
-                case '*': {
-                    targets.push_back({j, i});
-                    nextRow.push_back({j, i, space, false});
-                    break;
-                }
-                    
-                default: { break; }
-                    
+        char input;
+        fin >> input;
+        
+        switch (input) {
+                
+            // Wall
+            case 'x': {
+                maze[i][j] = {-1, false};       // Walls are immediately marked as unvisitable.
+                break;
             }
-            
+                
+            // Space
+            case '-': {
+                maze[i][j] = {-1, true};
+                break;
+            }
+                
+            // Target
+            case '*': {
+                
+                // Checks whether the first target is taken. Works even when first target is {0, 0}.
+                if (targets.first == &maze[0][0]) { targets.first = &(maze[i][j]); }
+                else { targets.second = &(maze[j][i]); }
+                
+                maze[i][j] = {-1, true};
+                
+                break;
+                
+            }
+                
+            default: { break; }
+                
         }
-        
-        maze.push_back(nextRow);
         
     }
     
-    #define origin maze[targets[0].second][targets[0].first]
-    (origin).distanceFromOrigin = 0;
-    (origin).wasVisited = true;
+    // Unsearched positions are stored in a queue.
+    queue<Position*> unsearchedPositions;
     
-    queue<MazeNode*> unsearchedNodes;
-    unsearchedNodes.push(&(origin));
+    // Sets the first target as the origin.
+    (*targets.first).distanceFromOrigin = 0;
+    (*targets.first).visitable = false;
+    unsearchedPositions.push(targets.first);
     
-    while (!unsearchedNodes.empty()) {
+    while (!unsearchedPositions.empty()) {
         
-        int dx[4] = {1, 0, -1, 0};
+        // Possible movement combinations
         int dy[4] = {0, -1, 0, 1};
+        int dx[4] = {1, 0, -1, 0};
         
-        MazeNode* thisNode = unsearchedNodes.front();
+        Position* thisPosition = unsearchedPositions.front();
         
+        // Breaks out of the loop if the destination has been found. Since the graph is unweighted, the first visit is the shortest path.
+        if (thisPosition == targets.second) { break; }
+        
+        // Adds this position's neighbors to the queue.
         for (int i = 0; i < 4; ++ i) {
             
-            #define nextY (*thisNode).yPosition + dy[i]
-            #define nextX (*thisNode).xPosition + dx[i]
+            #define nextY ((thisPosition - &maze[0][0]) / width + dy[i])
+            #define nextX ((thisPosition - &maze[0][0]) % width + dx[i])
+            
+            // Continues onwards if the next position does not exist.
             if ( (nextY < 0) || (nextY > height - 1) || (nextX < 0) || (nextX > width - 1) ) { continue; }
             
-            if(!(maze[nextY][nextX]).wasVisited) {
+            if(maze[nextY][nextX].visitable) {
                 
-                (maze[nextY][nextX]).distanceFromOrigin = (*thisNode).distanceFromOrigin + 1;
-                (maze[nextY][nextX]).wasVisited = true;
+                (maze[nextY][nextX]).distanceFromOrigin = (*thisPosition).distanceFromOrigin + 1;       // Each position is one spot further away from the origin.
+                (maze[nextY][nextX]).visitable = false;
                 
-                unsearchedNodes.push(&(maze[nextY][nextX]));
+                unsearchedPositions.push(&(maze[nextY][nextX]));
                 
             }
             
+            #undef nextY
+            #undef nextX
+            
         }
         
-        unsearchedNodes.pop();
+        unsearchedPositions.pop();
         
     }
     
-    #define result (maze[targets[1].second][targets[1].first].distanceFromOrigin)
-    cout << (result == -1 ? "No path" : to_string(result)) << '\n';
+    #define result ((*targets.second).distanceFromOrigin)
+    cout << (result == -1 ? "No path" : to_string(result)) << '\n';     // Ternary operator changes the output depending on the result.
+    #undef result
     
     return 0;
     
