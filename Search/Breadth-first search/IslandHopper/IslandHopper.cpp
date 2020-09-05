@@ -69,6 +69,9 @@ int main() {
         
         Island* thisIsland = unsearchedIslands.front();
         
+        // Breaks out of the loop if the destination has been found.
+        if (thisIsland == &(islands[destination])) { break; }       // Since the graph is unweighted, the first visit is the shortest path.
+        
         // Adds this island's connections to the end of the queue.
         for (vector<Island*>::iterator itr = (*thisIsland).connections.begin(); itr != (*thisIsland).connections.end(); ++ itr) {
             if (!(**itr).wasVisited) {      // If the island has already been visited, the optimal path has already been found.
