@@ -38,7 +38,7 @@ Find the `N`th Fibonacci number.
 204312082516817125
 ```
 
-## Apendix
+## Appendix
 ### First 2000 Fibonacci numbers
 ```
 0 0
