@@ -13,7 +13,7 @@ Find the `N`th Fibonacci number.
 
 ## Output
 *To the console:*
-* The `N`th Fibonacci number. Output the last 18 digits only if the result is greater than `2 × 10⁶⁴`.
+* The `N`th Fibonacci number. Output the last 18 digits only if the result is greater than 2⁶⁴.
 
 ## Sample I/O
 ### Input 1
