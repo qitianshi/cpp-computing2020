@@ -9,7 +9,7 @@ Find the `N`th Fibonacci number.
 
 ## Input
 *From the console:*
-* `Line 1`: the integer, `N`.
+* `line 1`: the integer, `N`.
 
 ## Output
 *To the console:*
@@ -30,12 +30,12 @@ Find the `N`th Fibonacci number.
 
 ### Input 2
 ```
-93
+2000
 ```
 
 ### Output 2
 ```
-12200160415121876738
+204312082516817125
 ```
 
 ## Apendix
