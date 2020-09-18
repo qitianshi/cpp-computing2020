@@ -29,10 +29,25 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>LongestIncreasingSubsequence.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>LongestSubsequence.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>MaximumSubrectangle.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>MaximumSubsequence.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
 		</dict>
 		<key>NumberOfOnes.xcscheme_^#shared#^_</key>
 		<dict>
@@ -127,6 +142,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>314528BF2511C6CF005E7F74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3152364924D1C19B000D6C5C</key>
 		<dict>
 			<key>primary</key>
@@ -163,6 +183,16 @@
 			<true/>
 		</dict>
 		<key>3185D96724B8451E007DF821</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31F1C8212510995300457C53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31F1C83025109C6000457C53</key>
 		<dict>
 			<key>primary</key>
 			<true/>

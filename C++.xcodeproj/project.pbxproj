@@ -14,6 +14,7 @@
 		311DA6372503A040006BF594 /* SumOfNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311DA6362503A040006BF594 /* SumOfNumbers.cpp */; };
 		31294BDF24FE2C28003F0D00 /* ShortestMazePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31294BDE24FE2C28003F0D00 /* ShortestMazePath.cpp */; };
 		31362FAC24F50F5A00A12C70 /* LetterGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */; };
+		314528C82511C6E1005E7F74 /* LongestIncreasingSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 314528C72511C6E1005E7F74 /* LongestIncreasingSubsequence.cpp */; };
 		3152365224D1C1C3000D6C5C /* RoomAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */; };
 		3156D2F824BDC9D30090066F /* LongestSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3156D2E624BD985A0090066F /* LongestSubsequence.cpp */; };
 		3184A71424E2806C00E95157 /* RoadNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3184A71324E2806C00E95157 /* RoadNetwork.cpp */; };
@@ -22,6 +23,8 @@
 		3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D96A24B8451E007DF821 /* SumOfPairs.cpp */; };
 		31EC1A8524FFCFF700CAAD47 /* FindOccurrences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */; };
 		31EC1A8924FFD04D00CAAD47 /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */; };
+		31F1C82A2510996F00457C53 /* MaximumSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31F1C8292510996F00457C53 /* MaximumSubsequence.cpp */; };
+		31F1C83925109C8200457C53 /* MaximumSubrectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31F1C83825109C8200457C53 /* MaximumSubrectangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +100,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		314528BE2511C6CF005E7F74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		3152364824D1C19B000D6C5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +172,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		31F1C8202510995300457C53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		31F1C82F25109C6000457C53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +222,10 @@
 		31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LetterGrid.cpp; sourceTree = "<group>"; };
 		31362FAD24F50F6400A12C70 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		31362FAE24F50F6E00A12C70 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
+		314528C02511C6CF005E7F74 /* LongestIncreasingSubsequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LongestIncreasingSubsequence; sourceTree = BUILT_PRODUCTS_DIR; };
+		314528C72511C6E1005E7F74 /* LongestIncreasingSubsequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LongestIncreasingSubsequence.cpp; sourceTree = "<group>"; };
+		314528C92511C6EB005E7F74 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		314528CA2511C6F1005E7F74 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		3152364A24D1C19B000D6C5C /* RoomAllocator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RoomAllocator; sourceTree = BUILT_PRODUCTS_DIR; };
 		3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RoomAllocator.cpp; sourceTree = "<group>"; };
 		3152365324D1C1FE000D6C5C /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -220,6 +254,14 @@
 		31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NumberOfOnes.cpp; sourceTree = "<group>"; };
 		31EC1A8A24FFD05C00CAAD47 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		31EC1A8B24FFD07200CAAD47 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
+		31F1C8222510995300457C53 /* MaximumSubsequence */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaximumSubsequence; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F1C8292510996F00457C53 /* MaximumSubsequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaximumSubsequence.cpp; sourceTree = "<group>"; };
+		31F1C82B2510998100457C53 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31F1C82C2510999600457C53 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
+		31F1C83125109C6000457C53 /* MaximumSubrectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaximumSubrectangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F1C83825109C8200457C53 /* MaximumSubrectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaximumSubrectangle.cpp; sourceTree = "<group>"; };
+		31F1C83A25109C8F00457C53 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31F1C83B25109C9900457C53 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +321,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		314528BD2511C6CF005E7F74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3152364724D1C19B000D6C5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +371,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3185D96524B8451E007DF821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F1C81F2510995300457C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F1C82E25109C6000457C53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,6 +475,9 @@
 				31294BD524FE2BB5003F0D00 /* ShortestMazePath */,
 				311DA62125039A51006BF594 /* Fibonacci */,
 				311DA62F2503A004006BF594 /* SumOfNumbers */,
+				31F1C8222510995300457C53 /* MaximumSubsequence */,
+				31F1C83125109C6000457C53 /* MaximumSubrectangle */,
+				314528C02511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -421,6 +487,9 @@
 			children = (
 				311DA62225039A51006BF594 /* Fibonacci */,
 				311DA6302503A004006BF594 /* SumOfNumbers */,
+				31F1C8232510995300457C53 /* MaximumSubsequence */,
+				31F1C83225109C6000457C53 /* MaximumSubrectangle */,
+				314528C12511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 			);
 			path = "Dynamic programming";
 			sourceTree = "<group>";
@@ -462,6 +531,16 @@
 				31362FAE24F50F6E00A12C70 /* Description.md */,
 			);
 			path = LetterGrid;
+			sourceTree = "<group>";
+		};
+		314528C12511C6CF005E7F74 /* LongestIncreasingSubsequence */ = {
+			isa = PBXGroup;
+			children = (
+				314528C72511C6E1005E7F74 /* LongestIncreasingSubsequence.cpp */,
+				314528C92511C6EB005E7F74 /* data.txt */,
+				314528CA2511C6F1005E7F74 /* Description.md */,
+			);
+			path = LongestIncreasingSubsequence;
 			sourceTree = "<group>";
 		};
 		3152364B24D1C19B000D6C5C /* RoomAllocator */ = {
@@ -560,6 +639,26 @@
 				31EC1A8B24FFD07200CAAD47 /* Description.md */,
 			);
 			path = NumberOfOnes;
+			sourceTree = "<group>";
+		};
+		31F1C8232510995300457C53 /* MaximumSubsequence */ = {
+			isa = PBXGroup;
+			children = (
+				31F1C8292510996F00457C53 /* MaximumSubsequence.cpp */,
+				31F1C82B2510998100457C53 /* data.txt */,
+				31F1C82C2510999600457C53 /* Description.md */,
+			);
+			path = MaximumSubsequence;
+			sourceTree = "<group>";
+		};
+		31F1C83225109C6000457C53 /* MaximumSubrectangle */ = {
+			isa = PBXGroup;
+			children = (
+				31F1C83825109C8200457C53 /* MaximumSubrectangle.cpp */,
+				31F1C83A25109C8F00457C53 /* data.txt */,
+				31F1C83B25109C9900457C53 /* Description.md */,
+			);
+			path = MaximumSubrectangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -701,6 +800,23 @@
 			productReference = 31362FA424F50F2D00A12C70 /* LetterGrid */;
 			productType = "com.apple.product-type.tool";
 		};
+		314528BF2511C6CF005E7F74 /* LongestIncreasingSubsequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314528C62511C6CF005E7F74 /* Build configuration list for PBXNativeTarget "LongestIncreasingSubsequence" */;
+			buildPhases = (
+				314528BC2511C6CF005E7F74 /* Sources */,
+				314528BD2511C6CF005E7F74 /* Frameworks */,
+				314528BE2511C6CF005E7F74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongestIncreasingSubsequence;
+			productName = LongestIncreasingSubsequence;
+			productReference = 314528C02511C6CF005E7F74 /* LongestIncreasingSubsequence */;
+			productType = "com.apple.product-type.tool";
+		};
 		3152364924D1C19B000D6C5C /* RoomAllocator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3152365024D1C19B000D6C5C /* Build configuration list for PBXNativeTarget "RoomAllocator" */;
@@ -820,6 +936,40 @@
 			productReference = 3185D96824B8451E007DF821 /* SumOfPairs */;
 			productType = "com.apple.product-type.tool";
 		};
+		31F1C8212510995300457C53 /* MaximumSubsequence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F1C8282510995300457C53 /* Build configuration list for PBXNativeTarget "MaximumSubsequence" */;
+			buildPhases = (
+				31F1C81E2510995300457C53 /* Sources */,
+				31F1C81F2510995300457C53 /* Frameworks */,
+				31F1C8202510995300457C53 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaximumSubsequence;
+			productName = MaximumSubsequence;
+			productReference = 31F1C8222510995300457C53 /* MaximumSubsequence */;
+			productType = "com.apple.product-type.tool";
+		};
+		31F1C83025109C6000457C53 /* MaximumSubrectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F1C83525109C6000457C53 /* Build configuration list for PBXNativeTarget "MaximumSubrectangle" */;
+			buildPhases = (
+				31F1C82D25109C6000457C53 /* Sources */,
+				31F1C82E25109C6000457C53 /* Frameworks */,
+				31F1C82F25109C6000457C53 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaximumSubrectangle;
+			productName = MaximumSubrectangle;
+			productReference = 31F1C83125109C6000457C53 /* MaximumSubrectangle */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -853,6 +1003,9 @@
 					31362FA324F50F2D00A12C70 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					314528BF2511C6CF005E7F74 = {
+						CreatedOnToolsVersion = 11.7;
+					};
 					3152364924D1C19B000D6C5C = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -873,6 +1026,12 @@
 					};
 					3185D96724B8451E007DF821 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					31F1C8212510995300457C53 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					31F1C83025109C6000457C53 = {
+						CreatedOnToolsVersion = 11.7;
 					};
 				};
 			};
@@ -904,6 +1063,9 @@
 				31076E4924DA725800E5C101 /* NumberOfOnes */,
 				311DA62025039A51006BF594 /* Fibonacci */,
 				311DA62E2503A004006BF594 /* SumOfNumbers */,
+				31F1C8212510995300457C53 /* MaximumSubsequence */,
+				31F1C83025109C6000457C53 /* MaximumSubrectangle */,
+				314528BF2511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 			);
 		};
 /* End PBXProject section */
@@ -973,6 +1135,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		314528BC2511C6CF005E7F74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314528C82511C6E1005E7F74 /* LongestIncreasingSubsequence.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3152364624D1C19B000D6C5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1026,6 +1196,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F1C81E2510995300457C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F1C82A2510996F00457C53 /* MaximumSubsequence.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F1C82D25109C6000457C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F1C83925109C8200457C53 /* MaximumSubrectangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,6 +1499,26 @@
 			};
 			name = Release;
 		};
+		314528C42511C6CF005E7F74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		314528C52511C6CF005E7F74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3152364E24D1C19B000D6C5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1467,6 +1673,46 @@
 			};
 			name = Release;
 		};
+		31F1C8262510995300457C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31F1C8272510995300457C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		31F1C83625109C6000457C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31F1C83725109C6000457C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1551,6 +1797,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		314528C62511C6CF005E7F74 /* Build configuration list for PBXNativeTarget "LongestIncreasingSubsequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314528C42511C6CF005E7F74 /* Debug */,
+				314528C52511C6CF005E7F74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3152365024D1C19B000D6C5C /* Build configuration list for PBXNativeTarget "RoomAllocator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1610,6 +1865,24 @@
 			buildConfigurations = (
 				3185D96C24B8451E007DF821 /* Debug */,
 				3185D96D24B8451E007DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F1C8282510995300457C53 /* Build configuration list for PBXNativeTarget "MaximumSubsequence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F1C8262510995300457C53 /* Debug */,
+				31F1C8272510995300457C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F1C83525109C6000457C53 /* Build configuration list for PBXNativeTarget "MaximumSubrectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F1C83625109C6000457C53 /* Debug */,
+				31F1C83725109C6000457C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
