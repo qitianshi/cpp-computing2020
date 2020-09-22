@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "311DA62E2503A004006BF594"
-               BuildableName = "SumOfNumbers"
-               BlueprintName = "SumOfNumbers"
+               BlueprintIdentifier = "31E379012519DDBD00640C97"
+               BuildableName = "CoinChanger"
+               BlueprintName = "CoinChanger"
                ReferencedContainer = "container:C++.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/tianshiqi/Documents/School/Computing/C++/Dynamic programming/SumOfNumbers"
+      customWorkingDirectory = "/Users/tianshiqi/Documents/School/Computing/C++/Dynamic programming/CoinChanger"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -45,9 +45,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "311DA62E2503A004006BF594"
-            BuildableName = "SumOfNumbers"
-            BlueprintName = "SumOfNumbers"
+            BlueprintIdentifier = "31E379012519DDBD00640C97"
+            BuildableName = "CoinChanger"
+            BlueprintName = "CoinChanger"
             ReferencedContainer = "container:C++.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,9 +62,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "311DA62E2503A004006BF594"
-            BuildableName = "SumOfNumbers"
-            BlueprintName = "SumOfNumbers"
+            BlueprintIdentifier = "31E379012519DDBD00640C97"
+            BuildableName = "CoinChanger"
+            BlueprintName = "CoinChanger"
             ReferencedContainer = "container:C++.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

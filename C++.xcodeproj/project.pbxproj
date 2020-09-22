@@ -11,7 +11,6 @@
 		311922FF24BEC71E009FF0F0 /* LineSegments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311922FE24BEC71E009FF0F0 /* LineSegments.cpp */; };
 		311A2AE324B84406000FFBFE /* testbed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311A2AE224B84406000FFBFE /* testbed.cpp */; };
 		311DA62925039A6E006BF594 /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311DA62825039A6E006BF594 /* Fibonacci.cpp */; };
-		311DA6372503A040006BF594 /* SumOfNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311DA6362503A040006BF594 /* SumOfNumbers.cpp */; };
 		31294BDF24FE2C28003F0D00 /* ShortestMazePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31294BDE24FE2C28003F0D00 /* ShortestMazePath.cpp */; };
 		31362FAC24F50F5A00A12C70 /* LetterGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31362FAB24F50F5A00A12C70 /* LetterGrid.cpp */; };
 		3152365224D1C1C3000D6C5C /* RoomAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3152365124D1C1C3000D6C5C /* RoomAllocator.cpp */; };
@@ -20,6 +19,7 @@
 		3185D95824B844C0007DF821 /* Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95724B844C0007DF821 /* Sort.cpp */; };
 		3185D96024B844F9007DF821 /* Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95F24B844F9007DF821 /* Search.cpp */; };
 		3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D96A24B8451E007DF821 /* SumOfPairs.cpp */; };
+		31E379092519DDCA00640C97 /* CoinChanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311DA6362503A040006BF594 /* CoinChanger.cpp */; };
 		31EC1A8524FFCFF700CAAD47 /* FindOccurrences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */; };
 		31EC1A8924FFD04D00CAAD47 /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */; };
 		31EDFA072515454E000219CC /* LongestIncreasingSubsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EDFA062515454E000219CC /* LongestIncreasingSubsequence.cpp */; };
@@ -65,15 +65,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		311DA61F25039A51006BF594 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		311DA62D2503A004006BF594 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -172,6 +163,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		31E379002519DDBD00640C97 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		31F1C8202510995300457C53 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,8 +209,7 @@
 		311DA62125039A51006BF594 /* Fibonacci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Fibonacci; sourceTree = BUILT_PRODUCTS_DIR; };
 		311DA62825039A6E006BF594 /* Fibonacci.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
 		311DA62A25039AD7006BF594 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
-		311DA62F2503A004006BF594 /* SumOfNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SumOfNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
-		311DA6362503A040006BF594 /* SumOfNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfNumbers.cpp; sourceTree = "<group>"; };
+		311DA6362503A040006BF594 /* CoinChanger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoinChanger.cpp; sourceTree = "<group>"; };
 		311DA6392503A067006BF594 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		311DA63A2503A071006BF594 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		311DA63D2503A3BE006BF594 /* DescriptionTemplate.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DescriptionTemplate.md; sourceTree = "<group>"; };
@@ -247,6 +246,7 @@
 		3185D96A24B8451E007DF821 /* SumOfPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfPairs.cpp; sourceTree = "<group>"; };
 		31A309A724FB8E8E0090E6F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		31A309A924FBA2570090E6F1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		31E379022519DDBD00640C97 /* CoinChanger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoinChanger; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindOccurrences.cpp; sourceTree = "<group>"; };
 		31EC1A8624FFD01A00CAAD47 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		31EC1A8724FFD02F00CAAD47 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
@@ -294,13 +294,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		311DA61E25039A51006BF594 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		311DA62C2503A004006BF594 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +364,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3185D96524B8451E007DF821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E378FF2519DDBD00640C97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,10 +474,10 @@
 				310189D024F617C600B1879B /* IslandHopper */,
 				31294BD524FE2BB5003F0D00 /* ShortestMazePath */,
 				311DA62125039A51006BF594 /* Fibonacci */,
-				311DA62F2503A004006BF594 /* SumOfNumbers */,
 				31F1C8222510995300457C53 /* MaximumSubsequence */,
 				31F1C83125109C6000457C53 /* MaximumSubrectangle */,
 				314528C02511C6CF005E7F74 /* LongestIncreasingSubsequence */,
+				31E379022519DDBD00640C97 /* CoinChanger */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,10 +486,10 @@
 			isa = PBXGroup;
 			children = (
 				311DA62225039A51006BF594 /* Fibonacci */,
-				311DA6302503A004006BF594 /* SumOfNumbers */,
 				31F1C8232510995300457C53 /* MaximumSubsequence */,
 				31F1C83225109C6000457C53 /* MaximumSubrectangle */,
 				314528C12511C6CF005E7F74 /* LongestIncreasingSubsequence */,
+				311DA6302503A004006BF594 /* CoinChanger */,
 			);
 			path = "Dynamic programming";
 			sourceTree = "<group>";
@@ -503,14 +503,14 @@
 			path = Fibonacci;
 			sourceTree = "<group>";
 		};
-		311DA6302503A004006BF594 /* SumOfNumbers */ = {
+		311DA6302503A004006BF594 /* CoinChanger */ = {
 			isa = PBXGroup;
 			children = (
-				311DA6362503A040006BF594 /* SumOfNumbers.cpp */,
+				311DA6362503A040006BF594 /* CoinChanger.cpp */,
 				311DA6392503A067006BF594 /* data.txt */,
 				311DA63A2503A071006BF594 /* Description.md */,
 			);
-			path = SumOfNumbers;
+			path = CoinChanger;
 			sourceTree = "<group>";
 		};
 		31294BD624FE2BB5003F0D00 /* ShortestMazePath */ = {
@@ -749,23 +749,6 @@
 			productReference = 311DA62125039A51006BF594 /* Fibonacci */;
 			productType = "com.apple.product-type.tool";
 		};
-		311DA62E2503A004006BF594 /* SumOfNumbers */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 311DA6332503A004006BF594 /* Build configuration list for PBXNativeTarget "SumOfNumbers" */;
-			buildPhases = (
-				311DA62B2503A004006BF594 /* Sources */,
-				311DA62C2503A004006BF594 /* Frameworks */,
-				311DA62D2503A004006BF594 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SumOfNumbers;
-			productName = SumOfNumbers;
-			productReference = 311DA62F2503A004006BF594 /* SumOfNumbers */;
-			productType = "com.apple.product-type.tool";
-		};
 		31294BD424FE2BB5003F0D00 /* ShortestMazePath */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31294BDB24FE2BB5003F0D00 /* Build configuration list for PBXNativeTarget "ShortestMazePath" */;
@@ -936,6 +919,23 @@
 			productReference = 3185D96824B8451E007DF821 /* SumOfPairs */;
 			productType = "com.apple.product-type.tool";
 		};
+		31E379012519DDBD00640C97 /* CoinChanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E379062519DDBD00640C97 /* Build configuration list for PBXNativeTarget "CoinChanger" */;
+			buildPhases = (
+				31E378FE2519DDBD00640C97 /* Sources */,
+				31E378FF2519DDBD00640C97 /* Frameworks */,
+				31E379002519DDBD00640C97 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinChanger;
+			productName = CoinChanger;
+			productReference = 31E379022519DDBD00640C97 /* CoinChanger */;
+			productType = "com.apple.product-type.tool";
+		};
 		31F1C8212510995300457C53 /* MaximumSubsequence */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31F1C8282510995300457C53 /* Build configuration list for PBXNativeTarget "MaximumSubsequence" */;
@@ -994,9 +994,6 @@
 					311DA62025039A51006BF594 = {
 						CreatedOnToolsVersion = 11.7;
 					};
-					311DA62E2503A004006BF594 = {
-						CreatedOnToolsVersion = 11.7;
-					};
 					31294BD424FE2BB5003F0D00 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -1026,6 +1023,9 @@
 					};
 					3185D96724B8451E007DF821 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					31E379012519DDBD00640C97 = {
+						CreatedOnToolsVersion = 11.7;
 					};
 					31F1C8212510995300457C53 = {
 						CreatedOnToolsVersion = 11.7;
@@ -1062,10 +1062,10 @@
 				31858E2E24D1C8D400E72D20 /* FindOccurrences */,
 				31076E4924DA725800E5C101 /* NumberOfOnes */,
 				311DA62025039A51006BF594 /* Fibonacci */,
-				311DA62E2503A004006BF594 /* SumOfNumbers */,
 				31F1C8212510995300457C53 /* MaximumSubsequence */,
 				31F1C83025109C6000457C53 /* MaximumSubrectangle */,
 				314528BF2511C6CF005E7F74 /* LongestIncreasingSubsequence */,
+				31E379012519DDBD00640C97 /* CoinChanger */,
 			);
 		};
 /* End PBXProject section */
@@ -1108,14 +1108,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				311DA62925039A6E006BF594 /* Fibonacci.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		311DA62B2503A004006BF594 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				311DA6372503A040006BF594 /* SumOfNumbers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1196,6 +1188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E378FE2519DDBD00640C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E379092519DDCA00640C97 /* CoinChanger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1435,26 +1435,6 @@
 			};
 			name = Release;
 		};
-		311DA6342503A004006BF594 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PPPHHG5497;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		311DA6352503A004006BF594 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PPPHHG5497;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		31294BD924FE2BB5003F0D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1673,6 +1653,26 @@
 			};
 			name = Release;
 		};
+		31E379072519DDBD00640C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31E379082519DDBD00640C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		31F1C8262510995300457C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1770,15 +1770,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		311DA6332503A004006BF594 /* Build configuration list for PBXNativeTarget "SumOfNumbers" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				311DA6342503A004006BF594 /* Debug */,
-				311DA6352503A004006BF594 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		31294BDB24FE2BB5003F0D00 /* Build configuration list for PBXNativeTarget "ShortestMazePath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1865,6 +1856,15 @@
 			buildConfigurations = (
 				3185D96C24B8451E007DF821 /* Debug */,
 				3185D96D24B8451E007DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E379062519DDBD00640C97 /* Build configuration list for PBXNativeTarget "CoinChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E379072519DDBD00640C97 /* Debug */,
+				31E379082519DDBD00640C97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
