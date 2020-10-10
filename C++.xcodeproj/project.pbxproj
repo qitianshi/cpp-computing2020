@@ -19,6 +19,7 @@
 		3185D95824B844C0007DF821 /* Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95724B844C0007DF821 /* Sort.cpp */; };
 		3185D96024B844F9007DF821 /* Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D95F24B844F9007DF821 /* Search.cpp */; };
 		3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3185D96A24B8451E007DF821 /* SumOfPairs.cpp */; };
+		31A314D4251B06D0004008D7 /* MinimumCoins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31A314D3251B06D0004008D7 /* MinimumCoins.cpp */; };
 		31E379092519DDCA00640C97 /* CoinChanger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 311DA6362503A040006BF594 /* CoinChanger.cpp */; };
 		31EC1A8524FFCFF700CAAD47 /* FindOccurrences.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */; };
 		31EC1A8924FFD04D00CAAD47 /* NumberOfOnes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31EC1A8824FFD04D00CAAD47 /* NumberOfOnes.cpp */; };
@@ -163,6 +164,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		31A314CA251B06AE004008D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		31E379002519DDBD00640C97 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +256,10 @@
 		3185D96A24B8451E007DF821 /* SumOfPairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SumOfPairs.cpp; sourceTree = "<group>"; };
 		31A309A724FB8E8E0090E6F1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		31A309A924FBA2570090E6F1 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		31A314CC251B06AE004008D7 /* MinimumCoins */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinimumCoins; sourceTree = BUILT_PRODUCTS_DIR; };
+		31A314D3251B06D0004008D7 /* MinimumCoins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MinimumCoins.cpp; sourceTree = "<group>"; };
+		31A314D5251B06DD004008D7 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		31A314D6251B06EE004008D7 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		31E379022519DDBD00640C97 /* CoinChanger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoinChanger; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EC1A8424FFCFF700CAAD47 /* FindOccurrences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindOccurrences.cpp; sourceTree = "<group>"; };
 		31EC1A8624FFD01A00CAAD47 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
@@ -370,6 +384,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31A314C9251B06AE004008D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31E378FF2519DDBD00640C97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +499,7 @@
 				31F1C83125109C6000457C53 /* MaximumSubrectangle */,
 				314528C02511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 				31E379022519DDBD00640C97 /* CoinChanger */,
+				31A314CC251B06AE004008D7 /* MinimumCoins */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -490,6 +512,7 @@
 				31F1C83225109C6000457C53 /* MaximumSubrectangle */,
 				314528C12511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 				311DA6302503A004006BF594 /* CoinChanger */,
+				31A314CD251B06AE004008D7 /* MinimumCoins */,
 			);
 			path = "Dynamic programming";
 			sourceTree = "<group>";
@@ -610,6 +633,16 @@
 				3115A14D24B876310017D543 /* Description.md */,
 			);
 			path = SumOfPairs;
+			sourceTree = "<group>";
+		};
+		31A314CD251B06AE004008D7 /* MinimumCoins */ = {
+			isa = PBXGroup;
+			children = (
+				31A314D3251B06D0004008D7 /* MinimumCoins.cpp */,
+				31A314D5251B06DD004008D7 /* data.txt */,
+				31A314D6251B06EE004008D7 /* Description.md */,
+			);
+			path = MinimumCoins;
 			sourceTree = "<group>";
 		};
 		31EC1A8124FFCFB100CAAD47 /* Divide and conquer */ = {
@@ -919,6 +952,23 @@
 			productReference = 3185D96824B8451E007DF821 /* SumOfPairs */;
 			productType = "com.apple.product-type.tool";
 		};
+		31A314CB251B06AE004008D7 /* MinimumCoins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31A314D2251B06AE004008D7 /* Build configuration list for PBXNativeTarget "MinimumCoins" */;
+			buildPhases = (
+				31A314C8251B06AE004008D7 /* Sources */,
+				31A314C9251B06AE004008D7 /* Frameworks */,
+				31A314CA251B06AE004008D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimumCoins;
+			productName = MinimumCoins;
+			productReference = 31A314CC251B06AE004008D7 /* MinimumCoins */;
+			productType = "com.apple.product-type.tool";
+		};
 		31E379012519DDBD00640C97 /* CoinChanger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31E379062519DDBD00640C97 /* Build configuration list for PBXNativeTarget "CoinChanger" */;
@@ -1024,6 +1074,9 @@
 					3185D96724B8451E007DF821 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					31A314CB251B06AE004008D7 = {
+						CreatedOnToolsVersion = 11.7;
+					};
 					31E379012519DDBD00640C97 = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -1066,6 +1119,7 @@
 				31F1C83025109C6000457C53 /* MaximumSubrectangle */,
 				314528BF2511C6CF005E7F74 /* LongestIncreasingSubsequence */,
 				31E379012519DDBD00640C97 /* CoinChanger */,
+				31A314CB251B06AE004008D7 /* MinimumCoins */,
 			);
 		};
 /* End PBXProject section */
@@ -1188,6 +1242,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3185D96B24B8451E007DF821 /* SumOfPairs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A314C8251B06AE004008D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A314D4251B06D0004008D7 /* MinimumCoins.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1653,6 +1715,26 @@
 			};
 			name = Release;
 		};
+		31A314D0251B06AE004008D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		31A314D1251B06AE004008D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPPHHG5497;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		31E379072519DDBD00640C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1856,6 +1938,15 @@
 			buildConfigurations = (
 				3185D96C24B8451E007DF821 /* Debug */,
 				3185D96D24B8451E007DF821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31A314D2251B06AE004008D7 /* Build configuration list for PBXNativeTarget "MinimumCoins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31A314D0251B06AE004008D7 /* Debug */,
+				31A314D1251B06AE004008D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -54,6 +54,11 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>MinimumCoins.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>NumberOfOnes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -183,6 +188,11 @@
 			<true/>
 		</dict>
 		<key>3185D96724B8451E007DF821</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31A314CB251B06AE004008D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
