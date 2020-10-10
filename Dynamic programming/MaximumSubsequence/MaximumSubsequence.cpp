@@ -4,7 +4,7 @@
 
 // GNU General Public License version 3
 
-// Finds the contiguous subsequence with the largest sum.
+// Finds the largest sum for a contiguous subsequence.
 
 
 #include <iostream>
@@ -16,21 +16,25 @@ using namespace std;
 int main() {
     
     ifstream fin("data.txt");
-    vector<int> runningTotal;
+    vector<int> sequence, results;
 
-    // Stores the running total of the sequence.
+    // Stores sequence in a vector.
     {
         int input;
-        while (fin >> input) { runningTotal.push_back((runningTotal.empty() ? input : runningTotal[runningTotal.size() - 1] + input)); }
+        while (fin >> input) { sequence.push_back(input); }
     }
-    
-    int maximum = INT_MIN;
-    for (int i = 1; i <= runningTotal.size() - 1; ++ i) for (int j = 0; j < runningTotal.size() - i; ++ j) {
-        if (runningTotal[j + i] - runningTotal[j] > maximum) { maximum = runningTotal[j + i] - runningTotal[j]; }
+
+    int maximumSum = INT_MIN, runningTotal = 0;     // maximumSum is set to INT_MIN for if all of the numbers in the sequence are zero.
+    for (vector<int>::iterator itr = sequence.begin(); itr != sequence.end(); ++ itr) {
+        
+        runningTotal = max( (runningTotal + *itr) , *itr );     // If we encounter a single value greater than the entire runningTotal, a new sequence begins here.
+        maximumSum = max(maximumSum, runningTotal);             // maximumSum takes the current runningTotal if it's larger.
+        
     }
-    
-    cout << maximum << '\n';
-    
+
+    cout << maximumSum << '\n';
+    for(vector<int>::iterator itr = results.begin(); itr != results.end(); ++ itr) { cout << *itr << ' '; }
+
     return 0;
     
 }

@@ -1,8 +1,8 @@
 # Maximum subsequence
-Find the contiguous subsequence with the largest sum.
+Find the largest sum for a contiguous subsequence.
 
 ## Description
-Given a sequence of numbers, `S`, find the contiguous subsequence that has the largest possible sum.
+Given a sequence of numbers, `S`, find the largest possible sum for a contiguous subsequence.
 
 ## Constraints
 `Sᵢ ∈ ℤ`
@@ -14,16 +14,14 @@ Given a sequence of numbers, `S`, find the contiguous subsequence that has the l
 ## Output
 *To the console:*
 * The sum of numbers in the subsequence.
-* The numbers of the subsequence, separated by spaces.
 
 ## Sample I/O
 ### Input
 ```
-−2 1 −3 4 −1 2 1 −5 4
+-2 1 -3 4 -1 2 1 -5 4
 ```
 
 ### Output
 ```
 6
-4 −1 2 1
 ```
