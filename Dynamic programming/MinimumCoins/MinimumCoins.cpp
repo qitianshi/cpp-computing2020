@@ -12,7 +12,7 @@
 #include <limits.h>     // INT_MAX
 using namespace std;
 
-int findMinimum(int denominations[], int numberOfDenominations, int* minimumCoins[], int total, int remainingAmount) {
+int findMinimum(int denominations[], int numberOfDenominations, int remainingAmount) {
     
     if (remainingAmount == 0) { return 0; }
     
@@ -20,7 +20,7 @@ int findMinimum(int denominations[], int numberOfDenominations, int* minimumCoin
     
     for (int i = 0; i < numberOfDenominations; ++ i) {
         if (denominations[i] <= remainingAmount) {
-            int solution = findMinimum(denominations, numberOfDenominations, minimumCoins, total, remainingAmount - denominations[i]);
+            int solution = findMinimum(denominations, numberOfDenominations, remainingAmount - denominations[i]);
             if (solution != INT_MAX && solution + 1 < minimumNumber) { minimumNumber = solution + 1; }
         }
     }
@@ -36,10 +36,7 @@ int main() {
     int numberOfDenominations, total;
     fin >> numberOfDenominations >> total;
     
-    int* minimumCoins = new int[total];
-    minimumCoins[0] = 0;
-    for (int i = 1; i < total; ++ i) { minimumCoins[i] = INT_MAX; }
-    
+    // Stores the denominations in an array.
     int* denominations = new int[numberOfDenominations];
     for (int i = 0; i < numberOfDenominations; ++ i) {
         int input;
@@ -47,7 +44,7 @@ int main() {
         denominations[i] = input;
     }
     
-    cout << findMinimum(denominations, numberOfDenominations, &minimumCoins, total, total) << '\n';
+    cout << findMinimum(denominations, numberOfDenominations, total) << '\n';
     
     return 0;
     
