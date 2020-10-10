@@ -24,7 +24,7 @@ void displayArray(int array[], int arraySize) {
 
 /// Sorts the given array using insertion sort.
 ///
-/// Insertion sort iterates through each element, removing one at a time starting from the one at index 1, and brings it forward to the correct position. Insertion sort has a time complexity of O(n²).
+/// Iterates through each element, taking one at a time starting from the one at index 1, and brings it forward to the correct position. Insertion sort has a time complexity of O(n²).
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void insertionSort(int sortArray[], int arraySize) {
@@ -45,7 +45,7 @@ void insertionSort(int sortArray[], int arraySize) {
 
 /// Sorts the given array using selection sort.
 ///
-/// Selection sort repeatedly finds the minimum value element from the unsorted subarray and places it at the beginning of that subarray, Selection sort has a time complexity of O(n²), and generally performs worse than insertion sort.
+/// Selection sort repeatedly finds the minimum value element from the unsorted subarray and places it at the beginning of that subarray. Selection sort has a time complexity of O(n²), but generally performs worse than insertion sort.
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void selectionSort(int sortArray[], int arraySize) {
@@ -147,7 +147,7 @@ void mergeSort(int sortArray[], int leftIndex, int rightIndex) {
 
 /// Sorts the given array using quicksort.
 ///
-/// Quicksort is a divide and conquer algorithm. This implementation picks the last element as pivot and partitions the given array around the picked pivot, such that elements to the left are smaller and elements to the right are greater. Merge sort has a time complexity of O(n log n).
+/// Quicksort is a divide and conquer algorithm. This implementation picks the last element as pivot and partitions the given array around the picked pivot, such that elements to the left are smaller and elements to the right are greater. Quicksort has a time complexity of O(n log n).
 /// @param sortArray The array to be sorted.
 /// @param leftIndex The left index of the subarray.
 /// @param rightIndex The right index of the subarray.
@@ -206,40 +206,40 @@ void countingSort(int sortArray[], int arraySize) {
 
 /// Helper function for heapSort().
 /// @param sortArray The array to be sorted.
-/// @param upperIndex The upper index.
-/// @param lowerIndex The lower index.
-void heapify(int sortArray[], int upperIndex, int lowerIndex) {
+/// @param rootIndex The index of the new root.
+/// @param maximumIndex The maximum allowable index.
+void heapify(int sortArray[], int rootIndex, int maximumIndex) {
     
-    // Find the largest among root, left child and right child
-    int largestElementIndex = lowerIndex;
-    int leftChild = 2 * lowerIndex + 1;
-    int rightChild = 2 * lowerIndex + 2;
+    // Finds the largest among root, left child and right child.
+    int largestElementIndex = rootIndex;
+    int leftChild = 2 * rootIndex + 1;
+    int rightChild = 2 * rootIndex + 2;
 
     // Reassigns the index of the largest element
-    if (leftChild < upperIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
-    if (rightChild < upperIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
+    if (leftChild <= maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
+    if (rightChild <= maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
 
-    // Swap and continue heapifying if the root is not largest.
-    if (largestElementIndex != lowerIndex) {
-      swap(sortArray[lowerIndex], sortArray[largestElementIndex]);
-      heapify(sortArray, upperIndex, largestElementIndex);
+    // Swaps and continues heapifying if the root is not largest.
+    if (largestElementIndex != rootIndex) {
+      swap(sortArray[rootIndex], sortArray[largestElementIndex]);
+      heapify(sortArray, maximumIndex, largestElementIndex);
     }
     
 }
 
 /// Sorts the given array using heap sort.
 ///
-/// Heap sort divides the array into a sorted and an unsorted region, and iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. Heap sort maintains the unsorted region in a heap data structure to more quickly find the largest element in each step, unlike the similar selection sort which performs a linear-time scan of the unsorted region. Heap sort has a time complexity of O(n log n).
+/// Heap sort divides the array into a sorted and an unsorted region, and iteratively shrinks the unsorted region by extracting the largest element from it and inserting it into the sorted region. While selection sort also follows this principle, heap sort maintains the unsorted region in a heaped structure to quickly find the largest element. Heap sort has a time complexity of O(n log n).
 /// @param sortArray The array to be sorted.
 /// @param arraySize The size of the array.
 void heapSort(int sortArray[], int arraySize) {
     
     // Builds a max-heap
-    for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, arraySize, i); }
+    for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, i, arraySize - 1); }
 
     for (int i = arraySize - 1; i >= 0; -- i) {
       swap(sortArray[0], sortArray[i]);
-      heapify(sortArray, i, 0);     // Heapifies the root element after each iteration to move largest element back to the root.
+      heapify(sortArray, 0, i - 1);     // Heapifies the root element after each iteration to move largest element back to the root.
     }
     
 }
