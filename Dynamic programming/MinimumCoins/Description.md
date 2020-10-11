@@ -13,7 +13,7 @@ Given `M` coins of varying denominations, which are given in a list `L`, find th
 
 ## Input
 *From `data.txt`:*
-* `line 1`: the integer, `M`, and the integer `N`.
+* `line 1`: the two integers, `M`, and `N`, separated by a space.
 * `line 2`: the list of integers, `L`, separated by a space.
 
 ## Output
