@@ -27,7 +27,7 @@ Or, you can [submit an issue on GitHub](https://guides.github.com/features/issue
 This project was built with C++17.
 
 ## Status
-This project is still being maintained at the moment. More lesson files will be added as they become available, and existing code will continue to be updated.
+This repository is no longer being maintained.
 
 ## Acknowledgments
 My thanks go to [@Lumarstar](https://github.com/Lumarstar) for helping out with this project, and to Mr Koh Kim Tian from Hwa Chong Institution. 
