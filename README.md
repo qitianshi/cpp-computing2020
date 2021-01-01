@@ -33,6 +33,6 @@ This repository is no longer being maintained.
 My thanks go to [@Lumarstar](https://github.com/Lumarstar) for helping out with this project, and to Mr Koh Kim Tian from Hwa Chong Institution. 
 
 ## License
-This project shall be licensed under GPU GPL v3.0.
+This project shall be licensed under GNU GPL v3.0.
 
 [See the license.](./LICENSE.txt)
