@@ -13,6 +13,7 @@
 #include <chrono>       // steady_clock (high resolution chronograph)
 #include <algorithm>    // sort
 #include <limits.h>     // INT_MIN
+#include <queue>
 using namespace std;
 
 /// Prints the elements of an array, separated by spaces.
@@ -82,46 +83,38 @@ void bubbleSort(int sortArray[], int arraySize) {
 /// @param rightIndex The right index of the second subarray.
 void merge(int sortArray[], int leftIndex, int middleIndex, int rightIndex) {
     
-    int firstSubarraySize = middleIndex - leftIndex + 1;
-    int secondSubarraySize = rightIndex - middleIndex;
-    
     // Creates temporary arrays to store elements from the main list.
-    int firstSubarray[firstSubarraySize];
-    int secondSubarray[secondSubarraySize];
-    for (int i = 0; i < firstSubarraySize; ++ i) { firstSubarray[i] = sortArray[leftIndex + i]; }
-    for (int i = 0; i < secondSubarraySize; ++ i) { secondSubarray[i] = sortArray[middleIndex + 1 + i]; }
+    queue<int> leftArray;
+    queue<int> rightArray;
+    for (int i = leftIndex; i <= middleIndex; ++ i) { leftArray.push(sortArray[i]); }
+    for (int i = middleIndex + 1; i <= rightIndex; ++ i) { rightArray.push(sortArray[i]); }
     
-    int firstSubarrayIndex = 0;         // Initial index of first subarray
-    int secondSubarrayIndex = 0;        // Initial index of second subarray
-    int mergedArrayIndex = leftIndex;   // Initial index of merged array
-    
-    // Merges the temporary arrays back into the main array.
-    while (firstSubarrayIndex < firstSubarraySize && secondSubarrayIndex < secondSubarraySize) {
+    // Merges the two subarrays back into the main array.
+    int marker = leftIndex;     // The position of the next insertion.
+    while (!leftArray.empty() && !rightArray.empty()) {
         
-        if (firstSubarray[firstSubarrayIndex] <= secondSubarray[secondSubarrayIndex]) {
-            sortArray[mergedArrayIndex] = firstSubarray[firstSubarrayIndex];
-            firstSubarrayIndex ++;
+        if (leftArray.front() < rightArray.front()) {
+            sortArray[marker] = leftArray.front();
+            leftArray.pop();
         } else {
-            sortArray[mergedArrayIndex] = secondSubarray[secondSubarrayIndex];
-            secondSubarrayIndex ++;
+            sortArray[marker] = rightArray.front();
+            rightArray.pop();
         }
         
-        mergedArrayIndex ++;
+        marker ++;
         
     }
     
-    // Copies over the remaining elements in firstSubarray
-    while (firstSubarrayIndex < firstSubarraySize) {
-        sortArray[mergedArrayIndex] = firstSubarray[firstSubarrayIndex];
-        firstSubarrayIndex ++;
-        mergedArrayIndex ++;
+    // Copies over remaining elements, if there are any.
+    while (!leftArray.empty()) {
+        sortArray[marker] = leftArray.front();
+        leftArray.pop();
+        marker ++;
     }
-    
-    // Copies over the remaining elements in secondSubarray
-    while (secondSubarrayIndex < secondSubarraySize) {
-        sortArray[mergedArrayIndex] = secondSubarray[secondSubarrayIndex];
-        secondSubarrayIndex ++;
-        mergedArrayIndex ++;
+    while (!rightArray.empty()) {
+        sortArray[marker] = rightArray.front();
+        rightArray.pop();
+        marker ++;
     }
     
 }
