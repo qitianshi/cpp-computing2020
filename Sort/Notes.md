@@ -157,49 +157,38 @@ Once split, the algorithm then merges the left and right subarrays by calling a 
 ```C++
 void merge(int sortArray[], int leftIndex, int middleIndex, int rightIndex) {
     
-    int firstSubarraySize = middleIndex - leftIndex + 1;
-    int secondSubarraySize = rightIndex - middleIndex;
-    
     // Creates temporary arrays to store elements from the main list.
-    int firstSubarray[firstSubarraySize];
-    int secondSubarray[secondSubarraySize];
-    for (int i = 0; i < firstSubarraySize; ++ i)
-        firstSubarray[i] = sortArray[leftIndex + i];
-    for (int i = 0; i < secondSubarraySize; ++ i)
-        secondSubarray[i] = sortArray[middleIndex + 1 + i];
-
-    int firstSubarrayIndex = 0;         // Initial index of first subarray
-    int secondSubarrayIndex = 0;        // Initial index of second subarray
-    int mergedArrayIndex = leftIndex;   // Initial index of merged array
+    queue<int> leftArray;
+    queue<int> rightArray;
+    for (int i = leftIndex; i <= middleIndex; ++ i) { leftArray.push(sortArray[i]); }
+    for (int i = middleIndex + 1; i <= rightIndex; ++ i) { rightArray.push(sortArray[i]); }
     
-    // Merges the temporary arrays back into the main array.
-    while (firstSubarrayIndex < firstSubarraySize && secondSubarrayIndex < 
-     secondSubarraySize) {
+    // Merges the two subarrays back into the main array.
+    int marker = leftIndex;     // The position of the next insertion.
+    while (!leftArray.empty() && !rightArray.empty()) {
         
-        if (firstSubarray[firstSubarrayIndex] <= secondSubarray[secondSubarrayIndex]) {
-            sortArray[mergedArrayIndex] = firstSubarray[firstSubarrayIndex];
-            firstSubarrayIndex ++;
+        if (leftArray.front() < rightArray.front()) {
+            sortArray[marker] = leftArray.front();
+            leftArray.pop();
         } else {
-            sortArray[mergedArrayIndex] = secondSubarray[secondSubarrayIndex];
-            secondSubarrayIndex ++;
+            sortArray[marker] = rightArray.front();
+            rightArray.pop();
         }
         
-        mergedArrayIndex ++;
+        marker ++;
         
     }
     
-    // Copies over the remaining elements in firstSubarray
-    while (firstSubarrayIndex < firstSubarraySize) {
-        sortArray[mergedArrayIndex] = firstSubarray[firstSubarrayIndex];
-        firstSubarrayIndex ++;
-        mergedArrayIndex ++;
+    // Copies over remaining elements, if there are any.
+    while (!leftArray.empty()) {
+        sortArray[marker] = leftArray.front();
+        leftArray.pop();
+        marker ++;
     }
-    
-    // Copies over the remaining elements in secondSubarray
-    while (secondSubarrayIndex < secondSubarraySize) {
-        sortArray[mergedArrayIndex] = secondSubarray[secondSubarrayIndex];
-        secondSubarrayIndex ++;
-        mergedArrayIndex ++;
+    while (!rightArray.empty()) {
+        sortArray[marker] = rightArray.front();
+        rightArray.pop();
+        marker ++;
     }
     
 }
@@ -209,11 +198,11 @@ void merge(int sortArray[], int leftIndex, int middleIndex, int rightIndex) {
 
 The algorithm then copies the contents of the left and right subarrays to be merged. In this implementation, the original array is directly overwritten with the new values instead of swapping or reorganizing values.
 
-`firstSubarrayIndex` and `secondSubarrayIndex` are markers that indicate where the next element from either subarray should be taken from. Anything before them has already been written back into the main array. Similarly, `mergedArrayIndex` indicates the position in the main array to which new elements will be added.
+`mergedArrayIndex` indicates the position in the main array to which new elements will be added.
 
 The first `while` loop is the only part where comparison between the left and right subarrays takes place. The algorithm chooses the smaller of the values from the front of either subarray and places it into the main array by overwriting the existing value (which is why the left and right subarrays first need to be copied into a temporary array). This loop ends when either the left or right subarray has been completely inserted into the main array.
 
-Only one of the final two `while` loops will be run. Because the first `while` loop breaks immediately when either one subarray has been inserted, it’s likely that the other subarray has still not been depleted. Thus, depending on which one it is, one of the final two `while` loops will fill in the remainder. Because the remaining elements guaranteed to both be in order and also be greater than the last element inserted by the first `while` loop, it’s unnecessary to do any more sorting and the remaining elements can be directly inserted.
+Only one of the final two `while` loops will be run. Because the first `while` loop ends immediately when either one subarray has been inserted, it’s likely that the other subarray has still not been depleted. Thus, depending on which one it is, one of the final two `while` loops will fill in the remainder. Because the remaining elements guaranteed to both be in order and also be greater than the last element inserted by the first `while` loop, it’s unnecessary to do any more sorting and the remaining elements can be directly inserted.
 
 Merge sort has a time complexity of O(n log n), and is efficient with large lists.
 
@@ -262,16 +251,11 @@ Heap sort divides the array into a sorted and an unsorted region, and iterativel
 void heapSort(int sortArray[], int arraySize) {
     
     // Builds a max-heap
-    for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, i, arraySize); }
+    for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, i, arraySize - 1); }
 
-    for (int i = arraySize - 1; i >= 0; -- i) {
-
+    for (int i = arraySize - 1; i > 0; -- i) {
       swap(sortArray[0], sortArray[i]);
-
-      // Heapifies the root element after each iteration to move the largest element back 
-         to the root.
-      heapify(sortArray, 0, i);
-
+      heapify(sortArray, 0, i);     // Heapifies the root element after each iteration to move largest element back to the root.
     }
     
 }
@@ -286,23 +270,21 @@ Once the heapification is complete, sorting can begin. The second `for` loop beg
 Once the root (largest element) has been moved to the correct position at the end of the array, the smallest element is now at the root of the heap, because the first (largest) element was swapped with the last (smallest) element. Thus, it runs `heapSort()` again to restore the max-heap. Since this time most of the heap already exists, and we’re confident that there is an unbroken path from the root all the way to the end, we can call `heapify()` beginning with the first element: `heapify(sortArray, 0, i)`.
 
 ```C++
-void heapify(int sortArray[], int lowerIndex, int upperIndex) {
+void heapify(int sortArray[], int rootIndex, int maximumIndex) {
     
-    // Find the largest among root, left child and right child
-    int largestElementIndex = lowerIndex;
-    int leftChild = 2 * lowerIndex + 1;
-    int rightChild = 2 * lowerIndex + 2;
+    // Finds the largest among root, left child and right child.
+    int largestElementIndex = rootIndex;
+    int leftChild = 2 * rootIndex + 1;
+    int rightChild = 2 * rootIndex + 2;
 
     // Reassigns the index of the largest element
-    if (leftChild < upperIndex && sortArray[leftChild] > sortArray[largestElementIndex])
-        largestElementIndex = leftChild;
-    if (rightChild < upperIndex && sortArray[rightChild] > sortArray[largestElementIndex])
-        largestElementIndex = rightChild;
+    if (leftChild < maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
+    if (rightChild < maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
 
-    // Swap and continue heapifying if the root is not largest.
-    if (largestElementIndex != lowerIndex) {
-      swap(sortArray[lowerIndex], sortArray[largestElementIndex]);
-      heapify(sortArray, upperIndex, largestElementIndex);
+    // Swaps and continues heapifying if the root is not largest.
+    if (largestElementIndex != rootIndex) {
+      swap(sortArray[rootIndex], sortArray[largestElementIndex]);
+      heapify(sortArray, largestElementIndex, maximumIndex);
     }
     
 }
@@ -312,7 +294,7 @@ The `heapify()` function begins by identifying the root (the first index in the 
 
 The algorithm then checks if the node and its two children follow the rules of a max-heap. If not, they are swapped to ensure that the parent is greater than or equal to both its children. This is also where the index of the left and right children are checked to make sure that they are within range of the subarray. Thus, these three elements have been heapified.
 
-The `upperIndex` parameter is actually quite misleading, since no array index can actually be `upperIndex`. The parameter exists to tell `heapify()` when it’s reached the last group of nodes, which it can tell from when the children are outside the requested range. The fact that array indexes actually end at 1 less than the size of the array doesn’t matter because the second and third `if` statements check for strictly less than, not less than or equal to.
+The `maximumIndex` parameter exists to tell `heapify()` when it’s reached the last group of nodes, which it can tell from when the children are outside the requested range.
 
 The final `if` statement checks if there has been any change to where the largest element was. If so, it’s possible that the remainder of the heap needs to be reheapified as well, and `heapify()` calls itself to heapify each of the child branches.
 
