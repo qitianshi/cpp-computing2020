@@ -216,13 +216,13 @@ void heapify(int sortArray[], int rootIndex, int maximumIndex) {
     int rightChild = 2 * rootIndex + 2;
 
     // Reassigns the index of the largest element
-    if (leftChild <= maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
-    if (rightChild <= maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
+    if (leftChild < maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
+    if (rightChild < maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
 
     // Swaps and continues heapifying if the root is not largest.
     if (largestElementIndex != rootIndex) {
       swap(sortArray[rootIndex], sortArray[largestElementIndex]);
-      heapify(sortArray, maximumIndex, largestElementIndex);
+      heapify(sortArray, largestElementIndex, maximumIndex);
     }
     
 }
@@ -237,9 +237,9 @@ void heapSort(int sortArray[], int arraySize) {
     // Builds a max-heap
     for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, i, arraySize - 1); }
 
-    for (int i = arraySize - 1; i >= 0; -- i) {
+    for (int i = arraySize - 1; i > 0; -- i) {
       swap(sortArray[0], sortArray[i]);
-      heapify(sortArray, 0, i - 1);     // Heapifies the root element after each iteration to move largest element back to the root.
+      heapify(sortArray, 0, i);     // Heapifies the root element after each iteration to move largest element back to the root.
     }
     
 }
