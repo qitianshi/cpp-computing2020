@@ -208,6 +208,8 @@
 		310189D924F617E800B1879B /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		310189DA24F617F100B1879B /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		31076E4A24DA725800E5C101 /* NumberOfOnes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NumberOfOnes; sourceTree = BUILT_PRODUCTS_DIR; };
+		310BFDE425AE8E1A00AF5F9F /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		310BFDE525AE8E2400AF5F9F /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
 		3115A14C24B875EA0017D543 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		3115A14D24B876310017D543 /* Description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Description.md; sourceTree = "<group>"; };
 		311922F724BEC6FE009FF0F0 /* LineSegments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LineSegments; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -609,6 +611,7 @@
 			isa = PBXGroup;
 			children = (
 				3185D95724B844C0007DF821 /* Sort.cpp */,
+				310BFDE425AE8E1A00AF5F9F /* Notes.md */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				3185D95F24B844F9007DF821 /* Search.cpp */,
+				310BFDE525AE8E2400AF5F9F /* Notes.md */,
 				3185D96924B8451E007DF821 /* SumOfPairs */,
 				3156D2F224BDC9720090066F /* LongestSubsequence */,
 				310189CA24F6177200B1879B /* Depth-first search */,
