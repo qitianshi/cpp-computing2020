@@ -131,9 +131,9 @@ Merge sort is a divide and conquer algorithm. It divides the array in two halves
 
 ```C++
 void mergeSort(int sortArray[], int leftIndex, int rightIndex) {
-    if (leftIndex < rightIndex) {
-    
-        int middleIndex = (leftIndex + rightIndex) / 2;
+    if (leftIndex < rightIndex) {       // leftIndex > rightIndex indicates that the subarray has been split into individual elements; comparison returns false and the function returns.
+        
+        int middleIndex = (leftIndex + rightIndex) / 2;     // Casting to int allows this to work for odd-numbered arrays as well.
         
         mergeSort(sortArray, leftIndex, middleIndex);       // Sorts the left subarray.
         mergeSort(sortArray, middleIndex + 1, rightIndex);  // Sorts the right subarray.
@@ -252,10 +252,10 @@ void heapSort(int sortArray[], int arraySize) {
     
     // Builds a max-heap
     for (int i = arraySize / 2 - 1; i >= 0; -- i) { heapify(sortArray, i, arraySize - 1); }
-
+    
     for (int i = arraySize - 1; i > 0; -- i) {
-      swap(sortArray[0], sortArray[i]);
-      heapify(sortArray, 0, i);     // Heapifies the root element after each iteration to move largest element back to the root.
+        swap(sortArray[0], sortArray[i]);
+        heapify(sortArray, 0, i);     // Heapifies the root element after each iteration to move largest element back to the root.
     }
     
 }
@@ -276,15 +276,15 @@ void heapify(int sortArray[], int rootIndex, int maximumIndex) {
     int largestElementIndex = rootIndex;
     int leftChild = 2 * rootIndex + 1;
     int rightChild = 2 * rootIndex + 2;
-
+    
     // Reassigns the index of the largest element
-    if (leftChild < maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
-    if (rightChild < maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
-
+    if (leftChild <= maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
+    if (rightChild <= maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
+    
     // Swaps and continues heapifying if the root is not largest.
     if (largestElementIndex != rootIndex) {
-      swap(sortArray[rootIndex], sortArray[largestElementIndex]);
-      heapify(sortArray, largestElementIndex, maximumIndex);
+        swap(sortArray[rootIndex], sortArray[largestElementIndex]);
+        heapify(sortArray, largestElementIndex, maximumIndex);
     }
     
 }
