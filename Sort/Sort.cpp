@@ -209,8 +209,8 @@ void heapify(int sortArray[], int rootIndex, int maximumIndex) {
     int rightChild = 2 * rootIndex + 2;
     
     // Reassigns the index of the largest element
-    if (leftChild <= maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
-    if (rightChild <= maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
+    if (leftChild < maximumIndex && sortArray[leftChild] > sortArray[largestElementIndex]) { largestElementIndex = leftChild; }
+    if (rightChild < maximumIndex && sortArray[rightChild] > sortArray[largestElementIndex]) { largestElementIndex = rightChild; }
     
     // Swaps and continues heapifying if the root is not largest.
     if (largestElementIndex != rootIndex) {
