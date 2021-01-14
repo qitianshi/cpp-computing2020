@@ -33,6 +33,6 @@ This repository is no longer being maintained.
 My thanks go to [@Lumarstar](https://github.com/Lumarstar) for helping out with this project, and to Mr Koh Kim Tian from Hwa Chong Institution. 
 
 ## License
-Source code shall be licensed under GNU GPL v3.0. [See the license.](./LICENSE.txt)
+Source code shall be licensed under GNU GPL v3.0. [See the license.](./LICENSE)
 
 Notes shall be licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
