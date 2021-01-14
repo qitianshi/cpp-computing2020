@@ -35,4 +35,4 @@ My thanks go to [@Lumarstar](https://github.com/Lumarstar) for helping out with 
 ## License
 Source code shall be licensed under GNU GPL v3.0. [See the license.](./LICENSE.txt)
 
-Notes shall be licensed under [CC CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Notes shall be licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
