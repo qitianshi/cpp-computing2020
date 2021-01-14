@@ -299,3 +299,7 @@ The `maximumIndex` parameter exists to tell `heapify()` when it’s reached the 
 The final `if` statement checks if there has been any change to where the largest element was. If so, it’s possible that the remainder of the heap needs to be reheapified as well, and `heapify()` calls itself to heapify each of the child branches.
 
 Heap sort has a time complexity of O(n log n).
+
+---
+
+This document shall be licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).

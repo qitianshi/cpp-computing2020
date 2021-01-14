@@ -37,3 +37,7 @@ Similar to the checks in divide-and-conquer sorting algorithms such quicksort an
 `middleIndex` is taken as the middle point between `leftIndex` and `rightIndex`. If the target element happens to be at this index, it is found and the function returns, bringing the result all the way back through the call stack. If not, the algorithm calls the `binarySearch()` function again, and the parameters passed in are dependent on which side of `middleIndex` the target is in (hence the original array must be pre-sorted). `middleIndex` itself does not need to be included in either side because we already know it’s not the correct value.
 
 Binary search has a time complexity of O(log n).
+
+---
+
+This document shall be licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
