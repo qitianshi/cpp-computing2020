@@ -42,8 +42,6 @@ void countingSort(int sortArray[], int arraySize) {
 
 This implementation finds the maximum element in the array, then creates an array to store the number of occurrences of each element, where the index represents the element and its value represents the corresponding number of occurrences. The original array is then overwritten.
 
-Unfortunately this kkt level implementation is shit because it only works when the list consists entirely of positive integers, and wastes a huge amount of memory and time when there is a single very large element. A better implementation would be to use a map to store the number of occurrences for each element and a set to store the keys.
-
 Counting sort has a time complexity of O(n + k), where k is the range of key values.
 
 ## Insertion sort
