@@ -124,6 +124,8 @@ The outer `for` loop ends with the second-to-last element because the algorithm 
 
 The inner `for` loop ends with `arraySize - i - 1` because with every pass of the algorithm, the sorted subarray at the end grows by 1, as the largest element in the unsorted subarray is added to the front of the sorted subarray. It’s **`- 1`** because the `if` comparison compares `sortedArray[j]` with `sortedArray[j + 1]`.
 
+There are other variations to this same algorithm. For instance, if you make no swaps in an entire pass, you know that everything has been sorted, and you can end the program prematurely.
+
 Bubble sort has a time complexity of O(n²).
 
 ## Merge sort
