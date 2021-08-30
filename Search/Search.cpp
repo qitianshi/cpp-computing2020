@@ -110,7 +110,7 @@ int main() {
             case 2: {
                 searchType = "Binary search";
                 sort(searchElements.begin(), searchElements.end());     // Binary search requires that the list be sorted.
-                targetFoundAt = binarySearch(searchElements, searchTarget, 0, vectorSize);
+                targetFoundAt = binarySearch(searchElements, searchTarget, 0, vectorSize - 1);
                 break;
             }
 
